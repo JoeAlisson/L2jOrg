@@ -12,7 +12,9 @@ import org.l2j.gameserver.data.xml.impl.SkillTreesData;
 import org.l2j.gameserver.enums.ChatType;
 import org.l2j.gameserver.enums.SubclassInfoType;
 import org.l2j.gameserver.instancemanager.*;
-import org.l2j.gameserver.model.*;
+import org.l2j.gameserver.model.Clan;
+import org.l2j.gameserver.model.PcCondOverride;
+import org.l2j.gameserver.model.TeleportWhereType;
 import org.l2j.gameserver.model.actor.instance.Player;
 import org.l2j.gameserver.model.entity.*;
 import org.l2j.gameserver.model.holders.AttendanceInfoHolder;
@@ -235,9 +237,6 @@ public class EnterWorld extends ClientPacket {
         if (MailManager.getInstance().hasUnreadPost(player)) {
             player.sendPacket(new ExUnReadMailCount(player));
         }
-
-        // Send Quest List
-        player.sendPacket(new QuestList(player));
 
         if (Config.PLAYER_SPAWN_PROTECTION > 0) {
             player.setSpawnProtection(true);

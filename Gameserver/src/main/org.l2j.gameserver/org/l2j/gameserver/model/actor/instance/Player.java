@@ -1406,8 +1406,8 @@ public final class Player extends Playable {
     /**
      * @return List of {@link QuestState}s of the current player.
      */
-    public List<QuestState> getAllQuestStates() {
-        return new ArrayList<>(_quests.values());
+    public Collection<QuestState> getAllQuestStates() {
+        return _quests.values();
     }
 
     /**
@@ -8268,7 +8268,7 @@ public final class Player extends Playable {
         }
     }
 
-    public void onPlayerEnter() {
+    public void onEnter() {
         startWarnUserTakeBreak();
 
         if (isGM() && !Config.GM_STARTUP_BUILDER_HIDE) {
