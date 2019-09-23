@@ -18,8 +18,10 @@ import org.l2j.gameserver.network.serverpackets.NpcHtmlMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.time.DayOfWeek;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Calendar;
+import java.util.EnumSet;
 import java.util.List;
 
 

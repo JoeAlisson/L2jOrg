@@ -424,7 +424,7 @@ public class EnterWorld extends ClientPacket {
             }, 5000);
         }
 
-        player.onPlayerEnter();
+        player.onEnter();
         Quest.playerEnter(player);
     }
 
