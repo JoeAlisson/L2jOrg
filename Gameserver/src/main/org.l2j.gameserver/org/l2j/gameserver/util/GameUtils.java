@@ -27,9 +27,9 @@ import java.text.DateFormat;
 import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
-import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
+import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static org.l2j.commons.util.Util.isAnyNull;
 import static org.l2j.gameserver.util.MathUtil.isInsideRadius2D;
@@ -521,21 +521,8 @@ public final class GameUtils {
         return item instanceof Armor;
     }
 
-    public static <T extends WorldObject> Predicate<T> isVisible(WorldObject reference, int range) {
-        return isVisible(reference, range, false);
-    }
-
-    /**
-     * Test if a object can see other
-     *
-     * @param reference the object to take as reference
-     * @param range the range to test or -1 if any range
-     * @param includeReference if the reference is visible to himself
-     * @param <T> The type o the predicate
-     * @return a Predicate that test if a object is visible to the reference
-     */
-    public static <T extends WorldObject> Predicate<T> isVisible(WorldObject reference, int range, boolean includeReference) {
-        return visible -> nonNull(visible) && (includeReference || !visible.equals(reference)) &&
-                Objects.equals(visible.getInstanceWorld(),  reference.getInstanceWorld()) && (range == -1 || isInsideRadius3D(reference, visible, range));
+    public static boolean canTeleport(Player player) {
+        return !( isNull(player) || player.isInDuel() || player.isControlBlocked() || player.isConfused() || player.isCombatFlagEquipped() || player.isFlying() || player.isFlyingMounted() ||
+                player.isInOlympiadMode() || player.isAlikeDead() || player.isOnCustomEvent() || player.isInBattle() || player.isInsideZone(ZoneType.JAIL));
     }
 }

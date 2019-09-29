@@ -3661,14 +3661,7 @@ public final class Player extends Playable {
 
         sendPacket(mov);
 
-        World.getInstance().forEachVisibleObject(this, Player.class, player ->
-        {
-            if (!isVisibleFor(player)) {
-                return;
-            }
-
-            player.sendPacket(mov);
-        });
+        World.getInstance().forEachVisibleObject(this, Player.class, mov::sendTo, this::isVisibleFor);
     }
 
     @Override
@@ -3680,13 +3673,7 @@ public final class Player extends Playable {
 
         sendPacket(mov);
 
-        World.getInstance().forEachVisibleObject(this, Player.class, player ->
-        {
-            if (!isVisibleFor(player) || !MathUtil.isInsideRadius3D(this, player,  radiusInKnownlist)) {
-                return;
-            }
-            player.sendPacket(mov);
-        });
+        World.getInstance().forEachVisibleObjectInRange(this, Player.class, radiusInKnownlist, mov::sendTo, this::isVisibleFor);
     }
 
     /**
