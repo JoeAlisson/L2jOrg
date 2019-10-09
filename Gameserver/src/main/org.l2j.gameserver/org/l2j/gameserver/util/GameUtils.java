@@ -7,7 +7,6 @@ import org.l2j.gameserver.enums.HtmlActionScope;
 import org.l2j.gameserver.enums.IllegalActionPunishmentType;
 import org.l2j.gameserver.instancemanager.WalkingManager;
 import org.l2j.gameserver.model.Location;
-import org.l2j.gameserver.world.World;
 import org.l2j.gameserver.model.WorldObject;
 import org.l2j.gameserver.model.actor.*;
 import org.l2j.gameserver.model.actor.instance.*;
@@ -19,6 +18,8 @@ import org.l2j.gameserver.model.items.Weapon;
 import org.l2j.gameserver.model.items.instance.Item;
 import org.l2j.gameserver.network.serverpackets.AbstractHtmlPacket;
 import org.l2j.gameserver.network.serverpackets.ShowBoard;
+import org.l2j.gameserver.world.World;
+import org.l2j.gameserver.world.zone.ZoneType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
