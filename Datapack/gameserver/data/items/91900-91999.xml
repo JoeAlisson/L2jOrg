@@ -314,8 +314,11 @@
 	<armor id="91934" name="Adventurer's Bracelet" type="NONE" body-part="RIGHT_BRACELET" icon="icon.etc_rbracelet_c_i00">
 	<!-- When equipped, opens up 1 Talisman slot. -->
 		<restriction freightable="false" tradable="false" dropable="false" sellable="false" private-sellable="false"/>
-		<attributes weight="150" price="1080000" enchant-enabled="false" />
+		<attributes weight="150" commission-type="BRACELET" enchant-enabled="false" />
 		<crystal />
+		<skills>
+			<skill id="50912" value="-1"/>
+		</skills>
 	</armor>
 
 	<armor id="91935" name="Adventurer's Griffin Agathion" type="NONE" body-part="AGATHION" icon="icon.griffin_vehicle">
