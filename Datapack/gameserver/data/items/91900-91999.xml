@@ -191,7 +191,7 @@
 		<restriction freightable="false" olympiad-restricted="true" stackable="true" tradable="false" dropable="false" private-sellable="false" depositable="false"/>
 		<attributes commission-type="SCROLL_OTHER" action="SKILL_REDUCE"/>
 		<skill-reducer>
-			<skill id="62003" value="-1"/>  <!-- Scroll of Escape: Adaptation Training -->
+			<skill id="50152" value="-1"/>  <!-- Scroll of Escape: Adaptation Training -->
 		</skill-reducer>
 	</item>
 
