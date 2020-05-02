@@ -188,8 +188,11 @@
 
 	<item id="91917" name="Escape: Adaptation Training" type="SCROLL" icon="icon.etc_scroll_of_return_i04">
 	<!-- A magic scroll that teleports you to Leahen in Jin Kamael Village. -->
-		<restriction freightable="false" stackable="true" tradable="false" dropable="false" private-sellable="false" depositable="false"/>
-		<attributes action="SKILL_REDUCE"/>
+		<restriction freightable="false" olympiad-restricted="true" stackable="true" tradable="false" dropable="false" private-sellable="false" depositable="false"/>
+		<attributes commission-type="SCROLL_OTHER" action="SKILL_REDUCE"/>
+		<skill-reducer>
+			<skill id="62003" value="-1"/>  <!-- Scroll of Escape: Adaptation Training -->
+		</skill-reducer>
 	</item>
 
 	<item id="91918" name="Escape - Captain Bathis" type="SCROLL" icon="icon.etc_scroll_of_return_i04">
