@@ -38,7 +38,7 @@ public final class CrestTable {
         clanDAO.removeUnusedCrests();
         crests = clanDAO.findAllCrests();
         crests.keySet().forEach(crestIds::set);
-        nextId.set(crestIds.nextClearBit(0));
+        nextId.set(crestIds.nextClearBit(1));
         LOGGER.info("Loaded {} Crests.", crests.size());
     }
 
@@ -55,9 +55,9 @@ public final class CrestTable {
 
     private synchronized int getNextId() {
         var id = nextId.get();
-        var next = crestIds.nextClearBit(id);
+        var next = crestIds.nextClearBit(id+1);
         if(next < 0) {
-            next = crestIds.nextClearBit(0);
+            next = crestIds.nextClearBit(1);
         }
         if(next < 0) {
             increaseCrests();

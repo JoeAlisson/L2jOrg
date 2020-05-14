@@ -66,7 +66,7 @@
             </spoil>
         </dropLists>
     </npc>
-    <npc id="21001" level="55" type="Monster" name="Archer of Destruction">
+    <npc id="21001" level="55" type="Monster" name="Archer of Destruction" element="EARTH">
         <parameters>
             <param name="MoveAroundSocial" value="157"/>
             <param name="MoveAroundSocial1" value="157"/>
@@ -81,7 +81,7 @@
         <race>UNDEAD</race>
         <sex>MALE</sex>
         <equipment rhand="282"/> <!-- Elemental Bow -->
-        <acquire exp="5463" sp="163"/>
+        <acquire exp="5463" sp="163"  attribute_exp="20"/>
         <stats str="40" int="21" dex="30" wit="20" con="43" men="10">
             <vitals hp="686.46597" hpRegen="6.5" mp="969.075" mpRegen="2.4"/>
             <attack physical="948.6219328" magical="265.02979" random="10" critical="8" accuracy="0" attackSpeed="227" reuseDelay="1500" type="BOW" range="500" distance="10" width="0"/>
@@ -139,7 +139,7 @@
             </spoil>
         </dropLists>
     </npc>
-    <npc id="21002" level="56" type="Monster" name="Doom Scout">
+    <npc id="21002" level="56" type="Monster" name="Doom Scout" element="EARTH">
         <parameters>
             <param name="MoveAroundSocial" value="80"/>
             <param name="MoveAroundSocial1" value="80"/>
@@ -154,7 +154,7 @@
         <race>UNDEAD</race>
         <sex>MALE</sex>
         <equipment rhand="242" lhand="2496"/> <!-- Soulfire Dirk / Dwarven Chain Shield -->
-        <acquire exp="5663" sp="169"/>
+        <acquire exp="5663" sp="169"  attribute_exp="20"/>
         <stats str="40" int="21" dex="30" wit="20" con="43" men="10">
             <vitals hp="707.89494" hpRegen="6.5" mp="1000.935" mpRegen="2.4"/>
             <attack physical="390.7408794" magical="277.22116" random="10" critical="8" accuracy="0" attackSpeed="289" type="DAGGER" range="40" distance="80" width="120"/>
@@ -218,7 +218,7 @@
             </spoil>
         </dropLists>
     </npc>
-    <npc id="21003" level="57" type="Monster" name="Graveyard Lich">
+    <npc id="21003" level="57" type="Monster" name="Graveyard Lich" element="EARTH">
         <parameters>
             <param name="MoveAroundSocial" value="57"/>
             <param name="MoveAroundSocial1" value="57"/>
@@ -236,7 +236,7 @@
         </parameters>
         <race>CONSTRUCT</race>
         <sex>MALE</sex>
-        <acquire exp="11669" sp="350"/>
+        <acquire exp="11669" sp="350"  attribute_exp="20"/>
         <stats str="40" int="21" dex="30" wit="20" con="43" men="10">
             <vitals hp="729.32391" hpRegen="6.5" mp="1033.68" mpRegen="2.4"/>
             <attack physical="385.6663182" magical="289.69611" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120"/>
@@ -274,7 +274,7 @@
             <height normal="28"/>
         </collision>
     </npc>
-    <npc id="21004" level="58" type="Monster" name="Dismal Pole">
+    <npc id="21004" level="58" type="Monster" name="Dismal Pole" element="EARTH">
         <parameters>
             <param name="MoveAroundSocial" value="100"/>
             <param name="MoveAroundSocial1" value="100"/>
@@ -288,7 +288,7 @@
         </parameters>
         <race>PLANT</race>
         <sex>MALE</sex>
-        <acquire exp="6026" sp="180"/>
+        <acquire exp="6026" sp="180" attribute_exp="20"/>
         <stats str="40" int="21" dex="30" wit="20" con="43" men="10">
             <vitals hp="750.26026" hpRegen="6.5" mp="1065.54" mpRegen="2.4"/>
             <attack physical="469.8757876" magical="302.44274" random="30" critical="4" accuracy="4.75" attackSpeed="216" type="SWORD" range="80" distance="80" width="120"/>
@@ -348,7 +348,7 @@
             </spoil>
         </dropLists>
     </npc>
-    <npc id="21005" level="59" type="Monster" name="Graveyard Predator">
+    <npc id="21005" level="59" type="Monster" name="Graveyard Predator" element="EARTH">
         <parameters>
             <param name="MoveAroundSocial" value="82"/>
             <param name="MoveAroundSocial1" value="82"/>
@@ -362,7 +362,7 @@
         </parameters>
         <race>BUG</race>
         <sex>MALE</sex>
-        <acquire exp="6286" sp="188"/>
+        <acquire exp="6286" sp="188" attribute_exp="20"/>
         <stats str="40" int="21" dex="30" wit="20" con="43" men="10">
             <vitals hp="772.18185" hpRegen="6.5" mp="1098.285" mpRegen="2.4"/>
             <attack physical="508.138257" magical="315.44778" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120"/>
@@ -416,7 +416,7 @@
             </spoil>
         </dropLists>
     </npc>
-    <npc id="21006" level="60" type="Monster" name="Doom Servant">
+    <npc id="21006" level="60" type="Monster" name="Doom Servant" element="EARTH">
         <parameters>
             <param name="MoveAroundSocial" value="130"/>
             <param name="MoveAroundSocial1" value="130"/>
@@ -432,7 +432,7 @@
         </parameters>
         <race>UNDEAD</race>
         <sex>MALE</sex>
-        <acquire exp="6501" sp="195"/>
+        <acquire exp="6501" sp="195" attribute_exp="20"/>
         <stats str="40" int="21" dex="30" wit="20" con="43" men="10">
             <vitals hp="793.61082" hpRegen="6.5" mp="1130.145" mpRegen="2.4"/>
             <attack physical="529.480061" magical="328.69659" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120"/>
@@ -492,7 +492,7 @@
             </spoil>
         </dropLists>
     </npc>
-    <npc id="21007" level="61" type="Monster" name="Doom Guard">
+    <npc id="21007" level="61" type="Monster" name="Doom Guard" element="EARTH">
         <parameters>
             <param name="MoveAroundSocial" value="130"/>
             <param name="MoveAroundSocial1" value="130"/>
@@ -506,7 +506,7 @@
         </parameters>
         <race>UNDEAD</race>
         <sex>MALE</sex>
-        <acquire exp="6720" sp="201"/>
+        <acquire exp="6720" sp="201" attribute_exp="20"/>
         <stats str="40" int="21" dex="30" wit="20" con="43" men="10">
             <vitals hp="815.03979" hpRegen="7.5" mp="1162.89" mpRegen="2.7"/>
             <attack physical="551.188748" magical="342.17315" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120"/>
@@ -560,7 +560,7 @@
             </spoil>
         </dropLists>
     </npc>
-    <npc id="21008" level="62" type="Monster" name="Doom Archer">
+    <npc id="21008" level="62" type="Monster" name="Doom Archer" element="EARTH">
         <parameters>
             <param name="MoveAroundSocial" value="157"/>
             <param name="MoveAroundSocial1" value="157"/>
@@ -575,7 +575,7 @@
         <race>UNDEAD</race>
         <sex>MALE</sex>
         <equipment rhand="286"/> <!-- Eminence Bow -->
-        <acquire exp="6942" sp="208"/>
+        <acquire exp="6942" sp="208" attribute_exp="20"/>
         <stats str="40" int="21" dex="30" wit="20" con="43" men="10">
             <vitals hp="836.22245" hpRegen="7.5" mp="1196.52" mpRegen="2.7"/>
             <attack physical="1273.731061" magical="355.86007" random="10" critical="8" accuracy="0" attackSpeed="227" reuseDelay="1500" type="BOW" range="500" distance="10" width="0"/>
@@ -627,7 +627,7 @@
             </spoil>
         </dropLists>
     </npc>
-    <npc id="21009" level="63" type="Monster" name="Doom Trooper">
+    <npc id="21009" level="63" type="Monster" name="Doom Trooper" element="EARTH">
         <parameters>
             <param name="MoveAroundSocial" value="0"/>
             <param name="MoveAroundSocial1" value="0"/>
@@ -644,7 +644,7 @@
         <race>UNDEAD</race>
         <sex>MALE</sex>
         <equipment rhand="301"/> <!-- Scorpion -->
-        <acquire exp="7168" sp="215"/>
+        <acquire exp="7168" sp="215" attribute_exp="20"/>
         <stats str="40" int="21" dex="30" wit="20" con="43" men="10">
             <vitals hp="857.65142" hpRegen="7.5" mp="1229.265" mpRegen="2.7"/>
             <attack physical="695.0564638" magical="369.73862" random="30" critical="4" accuracy="4.75" attackSpeed="216" type="SWORD" range="80" distance="80" width="120"/>
@@ -707,7 +707,7 @@
             </spoil>
         </dropLists>
     </npc>
-    <npc id="21010" level="64" type="Monster" name="Doom Warrior">
+    <npc id="21010" level="64" type="Monster" name="Doom Warrior" element="EARTH">
         <parameters>
             <param name="MoveAroundSocial" value="215"/>
             <param name="MoveAroundSocial1" value="215"/>
@@ -722,7 +722,7 @@
         <race>UNDEAD</race>
         <sex>MALE</sex>
         <equipment rhand="71"/> <!-- Flamberge -->
-        <acquire exp="7397" sp="221"/>
+        <acquire exp="7397" sp="221" attribute_exp="20"/>
         <stats str="40" int="21" dex="30" wit="20" con="43" men="10">
             <vitals hp="879.08039" hpRegen="7.5" mp="1262.895" mpRegen="2.7"/>
             <attack physical="540.9468969" magical="383.78868" random="10" critical="8" accuracy="0" attackSpeed="289" type="DAGGER" range="40" distance="80" width="120"/>
@@ -4183,7 +4183,7 @@
             </spoil>
         </dropLists>
     </npc>
-    <npc id="21084" level="68" type="Monster" name="Bloody Lady">
+    <npc id="21084" level="84" name="Bloody Lady" type="Monster">
         <parameters>
             <param name="MoveAroundSocial" value="60"/>
             <param name="MoveAroundSocial1" value="60"/>
@@ -4198,33 +4198,19 @@
         </parameters>
         <race>DEMONIC</race>
         <sex>FEMALE</sex>
-        <acquire exp="51038" sp="1531"/>
-        <stats str="40" int="21" dex="30" wit="20" con="43" men="10">
-            <vitals hp="962.82579" hpRegen="7.5" mp="1398.3" mpRegen="2.7"/>
-            <attack physical="529.480061" magical="328.69659" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120"/>
-            <defence physical="225.1364364" magical="181.21958"/>
+        <acquire exp="1436673" sp="43101"/>
+        <stats con="28" dex="19" int="32" men="1" str="35" wit="20">
+            <vitals hp="45000" hpRegen="10" mp="3349" mpRegen="5"/>
+            <attack physical="1144.731301" magical="781.7030834" random="30" critical="4.75" accuracy="4.75" attackSpeed="250" type="SWORD" range="40" distance="80" width="120" />
+            <defence physical="357.86723" magical="261.87171" />
             <speed>
-                <walk ground="80"/>
-                <run ground="174"/>
+                <walk ground="50"/>
+                <run ground="110"/>
             </speed>
-            <hitTime>500</hitTime>
         </stats>
-        <status undying="false" canBeSown="true"/>
-        <skillList>
-            <skill id="4035" level="6"/> <!-- Poison -->
-            <skill id="4039" level="6"/> <!-- NPC MP Drain -->
-            <skill id="4416" level="9"/> <!-- Demons -->
-            <skill id="4408" level="12"/> <!-- HP Increase (4x) -->
-            <skill id="4410" level="14"/> <!-- Strong P. Atk. -->
-            <skill id="4411" level="12"/> <!-- Slightly Strong M. Atk. -->
-            <skill id="4413" level="9"/> <!-- Slightly Weak M. Def. -->
-            <skill id="4278" level="1"/> <!-- Dark Attack -->
-            <skill id="4276" level="2"/> <!-- Bow Vulnerability -->
-            <skill id="4458" level="2"/> <!-- Spear Vulnerability -->
-        </skillList>
+        <status attackable="true"/>
         <shots shotChance="30" spiritChance="30"/>
         <exCrtEffect>false</exCrtEffect>
-        <sNpcPropHpRate>3</sNpcPropHpRate>
         <ai aggroRange="500" clanHelpRange="400">
             <clanList>
                 <clan>BLOODY</clan>
@@ -4234,29 +4220,36 @@
             <radius normal="14"/>
             <height normal="40"/>
         </collision>
+        <!--Bloody Lady-->
         <dropLists>
             <drop>
-                <item id="358" min="1" max="1" chance="0.03"/> <!-- Blue Wolf Breastplate -->
-                <item id="2380" min="1" max="1" chance="0.03"/> <!-- Blue Wolf Gaiters -->
-                <item id="57" min="2091" max="4883" chance="70"/> <!-- Adena -->
-                <item id="1865" min="1" max="3" chance="13.38"/> <!-- Varnish -->
-                <item id="1895" min="1" max="1" chance="11.18"/> <!-- Metallic Fiber -->
-                <item id="1864" min="4" max="12" chance="9.7"/> <!-- Stem -->
-                <item id="4080" min="1" max="1" chance="6.635"/> <!-- Blue Wolf Gaiter Material -->
-                <item id="4078" min="1" max="1" chance="4.645"/> <!-- Blue Wolf Breastplate Part -->
-                <item id="4044" min="1" max="1" chance="1.4"/> <!-- Thons -->
-                <item id="4975" min="1" max="1" chance="0.3"/> <!-- Recipe: Black Ore Necklace (70%) -->
-                <item id="4985" min="1" max="1" chance="0.3"/> <!-- Recipe: Leather Armor of Doom (60%) -->
-                <item id="4618" min="1" max="1" chance="0.075"/> <!-- Greater Dye of DEX <Dex +4 CON -4> - 2nd Class Transfer -->
-                <item id="4621" min="1" max="1" chance="0.075"/> <!-- Greater Dye of MEN <Men +4 Int -4> - 2nd Class Transfer -->
-                <item id="5008" min="1" max="1" chance="0.075"/> <!-- Recipe: Pata (60%) -->
+                <!--Cabrio's Hand (Рука Кабрио)-->
+                <item chance="0.003" id="8687" max="1" min="1"/>
+                <!--Adena (Адена)-->
+                <item chance="70.0" id="57" max="5927" min="2540"/>
+                <!--Gemstone (A-grade) (Самоцвет: Ранг A)-->
+                <item chance="0.75" id="2133" max="1" min="1"/>
+                <!--Cabrio's Hand Head (Навершие Руки Кабрио)-->
+                <item chance="0.75" id="8721" max="1" min="1"/>
             </drop>
             <spoil>
-                <item id="4975" min="1" max="1" chance="8.126"/> <!-- Recipe: Black Ore Necklace (70%) -->
-                <item id="4985" min="1" max="1" chance="2.75"/> <!-- Recipe: Leather Armor of Doom (60%) -->
-                <item id="5008" min="1" max="1" chance="1.295"/> <!-- Recipe: Pata (60%) -->
+                <!--Cabrio's Hand Head (Навершие Руки Кабрио)-->
+                <item chance="0.75" id="8721" max="1" min="1"/>
+                <!--Magical Tablet (Магическая Табличка)-->
+                <item chance="0.75" id="90045" max="1" min="1"/>
+                <!--Recipe: Cabrio's Hand (60%) (Рецепт: Рука Кабрио (60%))-->
+                <item chance="0.3" id="8708" max="1" min="1"/>
             </spoil>
         </dropLists>
+        <skillList><!--Демоны: Раса Тьмы, противостоящая ангелам. Существа, изменяемые темными проклятиями, также становятся демонами.-->
+            <skill id="4416" level="9"/><!--HP увеличены (3x):-->
+            <skill id="4408" level="11"/><!--Усиленная Физ. Атк.:-->
+            <skill id="4410" level="12"/><!--Усиленная Маг. Атк.:-->
+            <skill id="4411" level="12"/><!--Очень Слабая Маг. Защ.:-->
+            <skill id="4413" level="6"/><!--Уязвимость к Лукам: Уязвимость к атакам луками.-->
+            <skill id="4276" level="3"/><!--Уязвимость к Древковому Оружию: Уязвимость к атакам древковым оружием.-->
+            <skill id="4458" level="1"/>
+        </skillList>
     </npc>
     <npc id="21085" level="78" type="Monster" name="Bloody Sniper">
         <parameters>

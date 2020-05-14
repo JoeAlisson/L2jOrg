@@ -46,6 +46,7 @@
             <xs:extension base="Condition">
                 <xs:attribute name="min" type="xs:int" use="required"/>
                 <xs:attribute name="max" type="xs:int" default="-1"/>
+                <xs:attribute name="check-3d" type="xs:boolean" default="false"/>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
