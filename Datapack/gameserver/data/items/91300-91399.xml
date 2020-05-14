@@ -649,19 +649,22 @@
 	<armor id="91378" name="Queen Ant's Ring Lv. 4" type="NONE" body-part="FINGER" icon="icon.accessory_ring_of_queen_ant_i04">
 	<!-- <Options>\nP. Atk. +10%\nM. Atk. +15%\nP. Critical Damage +15%\nM. Critical Damage +10%\nP. Accuracy +5\nM. Accuracy +5\nMax MP +30\nPoison Attack and Resistance +30%\n\nThe effect does not stack if two identical rings are equipped. Cannot be enchanted. -->
 		<restriction freightable="false"/>
-		<attributes weight="150" enchant-enabled="false" />
-		<crystal />
+		<attributes weight="150" enchant-enabled="true" />
+		<crystal type="S"/>
 		<stats>
 			<stat type="MAGICAL_DEFENCE" value="62.0"/>
 			<stat type="MAX_MP" value="30.0"/>
 		</stats>
+		<skills>
+			<skill id="3562" level="4" value="-1"/>  <!-- Queen Ant's Ring -->
+		</skills>
 	</armor>
 
 	<armor id="91379" name="Orfen's Earring Lv. 4" type="NONE" body-part="EAR" icon="icon.accessory_earring_of_orfen_i04">
 	<!-- <Options>\nMP Consumption -10%\nHeal Received +12%\nChance to activate MP Drain\nMax MP +40\nMental Attack and Resistance +20%\nHold Attack and Resistance +30%\n\n<Orfen's Earring>\nWhen used in PvP, Max MP -10%.\n\nThe effect does not stack if two identical earrings are equipped. Cannot be enchanted. -->
 		<restriction freightable="false"/>
-		<attributes weight="150" enchant-enabled="false" />
-		<crystal />
+		<attributes weight="150" enchant-enabled="true" />
+		<crystal type="S"/>
 		<stats>
 			<stat type="MAGICAL_DEFENCE" value="83.0"/>
 			<stat type="MAX_MP" value="40.0"/>
@@ -671,8 +674,8 @@
 	<armor id="91380" name="Ring of Core Lv. 4" type="NONE" body-part="FINGER" icon="icon.accessory_ring_of_core_i04">
 	<!-- <Options>\nReceived P. Damage -10%\nReceived M. Damage -10%\nP. Evasion +5\nM. Evasion +5\nMax MP +30\nMental Attack and Resistance +30%\nSleep Resistance +20%\n\n<Ring of Core>\nAll debuffs are canceled when used.\n\nThe effect does not stack if two identical rings are equipped. Cannot be enchanted. -->
 		<restriction freightable="false"/>
-		<attributes weight="150" enchant-enabled="false" />
-		<crystal />
+		<attributes weight="150" enchant-enabled="true" />
+		<crystal type="S"/>
 		<stats>
 			<stat type="MAGICAL_DEFENCE" value="62.0"/>
 			<stat type="MAX_MP" value="30.0"/>
@@ -682,34 +685,43 @@
 	<armor id="91381" name="Baium's Ring Lv. 4" type="NONE" body-part="FINGER" icon="icon.accessory_ring_of_baium_i04">
 	<!-- <Options>\nP. Skill Power +20%\nM. Skill Power +20%\nAtk. Spd. +10%\nCasting Spd. +10%\nP. Accuracy +8\nM. Accuracy +8\nP. Critical Damage 20%\nM. Critical Damage +20%\nMax MP +35\nStun Attack and Resistance +30%\nBleed Attack and Resistance +20%\n\nThe effect does not stack if two identical rings are equipped. Cannot be enchanted. -->
 		<restriction freightable="false"/>
-		<attributes weight="150" enchant-enabled="false" />
-		<crystal />
+		<attributes weight="150" enchant-enabled="true" />
+		<crystal type="S"/>
 		<stats>
 			<stat type="MAGICAL_DEFENCE" value="70.0"/>
 			<stat type="MAX_MP" value="35.0"/>
 		</stats>
+		<skills>
+			<skill id="3561" level="4" value="-1"/>  <!-- Baium's Ring -->
+		</skills>
 	</armor>
 
 	<armor id="91382" name="Zaken's Earring Lv. 4" type="NONE" body-part="EAR" icon="icon.accessory_earring_of_zaken_i04">
 	<!-- <Options>\nMP Consumption -10%\nHeal Received +15%\nHP Recovery +20%\nVampiric Rage +8%\nMax MP +45\nBleed Attack and Resistance +30%\nStun Attack and Resistance +20%\nMental Attack and Resistance +20%\n\n<Zaken’s Earring>\nLimits HP/MP/CP Recovery of enemies when used in PvP.\n\nWhen two identical earrings are equipped, only one effect is applied. Cannot be enchanted. -->
 		<restriction freightable="false"/>
-		<attributes weight="150" enchant-enabled="false" />
-		<crystal />
+		<attributes weight="150" enchant-enabled="true" />
+		<crystal type="S"/>
 		<stats>
 			<stat type="MAGICAL_DEFENCE" value="96.0"/>
 			<stat type="MAX_MP" value="45.0"/>
 		</stats>
+		<skills>
+			<skill id="3559" level="4" value="-1"/>  <!-- Damaged Baium's Ring -->
+		</skills>
 	</armor>
 
 	<armor id="91383" name="Antharas' Earring Lv. 4" type="NONE" body-part="EAR" icon="icon.accessory_earring_of_antaras_i04">
 	<!-- MP +50, CON +2, MEN +2, Bleed Attack and Resistance +40%, Stun Attack and Resistance +30%, MEN Attack and Resistance +30%, Damage Reflect Resistance +20%, Heal Received +20%, Vampiric Rage +6%, Skill MP Consumption -15%. Enables skills that prevent using physical and magic skills. When two identical earrings are equipped, the effect of only one earring will be applied. Cannot be enchanted. -->
 		<restriction freightable="false"/>
-		<attributes weight="150" enchant-enabled="false" />
-		<crystal />
+		<attributes weight="150" enchant-enabled="true" />
+		<crystal type="S"/>
 		<stats>
 			<stat type="MAGICAL_DEFENCE" value="96.0"/>
 			<stat type="MAX_MP" value="50.0"/>
 		</stats>
+		<skills>
+			<skill id="3558" level="15" value="-1"/>  <!-- Damaged Baium's Ring -->
+		</skills>
 	</armor>
 
 	<item id="91384" name="Queen Ant Essence" type="NONE" icon="icon.queen_ant_essence_i01">

@@ -719,4 +719,32 @@
         <reward id="49674" count="20"/> <!-- Rice Cake of Flaming Fighting Spirit -->
         <reward id="91781" count="20"/> <!-- Sayha's Effect Scroll -->
     </mission>
+	
+	 <mission id="4021" name="Reach Level 87" required-completion="87" cycle="SINGLE">
+        <handler name="level"/>
+        <reward id="91780" count="25"/> <!-- Dragon Scroll -->
+        <reward id="49674" count="25"/> <!-- Rice Cake of Flaming Fighting Spirit -->
+        <reward id="91781" count="25"/> <!-- Sayha's Effect Scroll -->
+    </mission>
+	
+	 <mission id="4021" name="Reach Level 88" required-completion="88" cycle="SINGLE">
+        <handler name="level"/>
+        <reward id="91780" count="30"/> <!-- Dragon Scroll -->
+        <reward id="49674" count="30"/> <!-- Rice Cake of Flaming Fighting Spirit -->
+        <reward id="91781" count="30"/> <!-- Sayha's Effect Scroll -->
+    </mission>
+	
+	 <mission id="4021" name="Reach Level 89" required-completion="89" cycle="SINGLE">
+        <handler name="level"/>
+        <reward id="91780" count="35"/> <!-- Dragon Scroll -->
+        <reward id="49674" count="35"/> <!-- Rice Cake of Flaming Fighting Spirit -->
+        <reward id="91781" count="35"/> <!-- Sayha's Effect Scroll -->
+    </mission>
+	
+	 <mission id="4021" name="Reach Level 90" required-completion="90" cycle="SINGLE">
+        <handler name="level"/>
+        <reward id="91780" count="40"/> <!-- Dragon Scroll -->
+        <reward id="49674" count="40"/> <!-- Rice Cake of Flaming Fighting Spirit -->
+        <reward id="91781" count="40"/> <!-- Sayha's Effect Scroll -->
+    </mission>
 </list>

@@ -26,7 +26,6 @@
     <xs:element name="target" type="TargetCondition" substitutionGroup="cond"/>
     <xs:element name="remain-status" type="RemainStatusCondition" substitutionGroup="cond"/>
     <xs:element name="soul" type="SoulCondition" substitutionGroup="cond"/>
-    <xs:element name="check-range" type="CheckRangeCondition" substitutionGroup="cond"/>
 
     <xs:complexType name="Conditions">
         <xs:sequence>

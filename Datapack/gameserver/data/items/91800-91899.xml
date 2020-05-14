@@ -3,19 +3,22 @@
 	<armor id="91800" name="Queen Ant's Ring Lv. 4" type="NONE" body-part="FINGER" icon="icon.accessory_ring_of_queen_ant_i04">
 	<!-- <Options>\nP. Atk. +10%\nM. Atk. +15%\nP. Critical Damage +15%\nM. Critical Damage +10%\nP. Accuracy +5\nM. Accuracy +5\nMax MP +30\nPoison Attack and Resistance +30%\n\n15-day. The effect does not stack if two identical rings are equipped. Cannot be enchanted. -->
 		<restriction freightable="false" tradable="false" dropable="false" sellable="false" private-sellable="false"/>
-		<attributes weight="150" enchant-enabled="false" />
-		<crystal />
+		<attributes weight="150" enchant-enabled="true" />
+		<crystal type="S"/>
 		<stats>
 			<stat type="MAGICAL_DEFENCE" value="62.0"/>
 			<stat type="MAX_MP" value="30.0"/>
 		</stats>
+		<skills>
+			<skill id="3562" level="4" value="-1"/>  <!-- Damaged Baium's Ring -->
+		</skills>
 	</armor>
 
 	<armor id="91801" name="Orfen's Earring Lv. 4" type="NONE" body-part="EAR" icon="icon.accessory_earring_of_orfen_i04">
 	<!-- <Options>\nMP Consumption -10%\nHeal Received +12%\nChance to activate MP Drain\nMax MP +40\nMental Attack and Resistance +20%\nHold Attack and Resistance +30%\n\n<Orfen's Earring>\nWhen used in PvP, Max MP -10%.\n\n15-day. The effect does not stack if two identical earrings are equipped. Cannot be enchanted. -->
 		<restriction freightable="false" tradable="false" dropable="false" sellable="false" private-sellable="false"/>
-		<attributes weight="150" enchant-enabled="false" />
-		<crystal />
+		<attributes weight="150" enchant-enabled="true" />
+		<crystal type="S"/>
 		<stats>
 			<stat type="MAGICAL_DEFENCE" value="83.0"/>
 			<stat type="MAX_MP" value="40.0"/>
@@ -25,8 +28,8 @@
 	<armor id="91802" name="Ring of Core Lv. 4" type="NONE" body-part="FINGER" icon="icon.accessory_ring_of_core_i04">
 	<!-- <Options>\nReceived P. Damage -10%\nReceived M. Damage -10%\nP. Evasion +5\nM. Evasion +5\nMax MP +30\nMental Attack and Resistance +30%\nSleep Resistance +20%\n\n<Ring of Core>\nAll debuffs are canceled when used.\n\n15-day. The effect does not stack if two identical rings are equipped. Cannot be enchanted. -->
 		<restriction freightable="false" tradable="false" dropable="false" sellable="false" private-sellable="false"/>
-		<attributes weight="150" enchant-enabled="false" />
-		<crystal />
+		<attributes weight="150" enchant-enabled="true" />
+		<crystal type="S"/>
 		<stats>
 			<stat type="MAGICAL_DEFENCE" value="62.0"/>
 			<stat type="MAX_MP" value="30.0"/>
@@ -298,9 +301,9 @@
 	<item id="91840" name="XP Boost Scroll - Event" type="NONE" icon="icon.etc_recall_exp_scroll">
 	<!-- When used, XP/SP Gain when hunting +30% for 20 minutes. The effect remains active even after death. Cooldown 1 minute. -->
 		<restriction freightable="false" stackable="true" tradable="false" dropable="false" private-sellable="false" depositable="false"/>
-		<attributes action="SKILL_REDUCE" auto-use="SUPPLY"/>
+		<attributes action="SKILL_REDUCE" immediate-effect="true" auto-use="SUPPLY"/>
 		<skill-reducer>
-			<skill id="50134"/>  <!-- XP Boost Scroll - Event -->
+			<skill id="32002" value="-1"/>  <!-- XP Boost Scroll - Exchangeable -->
 		</skill-reducer>
 	</item>
 

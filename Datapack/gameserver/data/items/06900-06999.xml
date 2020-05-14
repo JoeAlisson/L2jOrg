@@ -14,7 +14,7 @@
 		<damage radius="40" angle="240"/>
 	</weapon>
 
-	<armor id="6918" name="Monster Only (Silence Shield)" type="SHIELD" body-part="LEFT_HAND" icon="icon.weapon_monster_i00">
+	<armor id="6918" name="Monster Only (Silence Shield)" type="NONE" body-part="LEFT_HAND" icon="icon.weapon_monster_i00">
 		<restriction freightable="false" destroyable="false" tradable="false" dropable="false" private-sellable="false"/>
 		<attributes weight="1380" price="2580" enchant-enabled="false" />
 		<crystal />

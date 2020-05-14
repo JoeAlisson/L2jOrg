@@ -180,7 +180,7 @@
 	<weapon id="29614" name="Elemental Bow" type="BOW" body-part="TWO_HAND" icon="icon.weapon_elemental_bow_i00" mana-consume="3">
 	<!-- 30-day weapon. Cannot be exchanged or dropped. -->
 		<restriction freightable="false" tradable="false" dropable="false" sellable="false" private-sellable="false"/>
-		<attributes weight="1770" commission-type="OTHER_ITEM" duration="43200" enchant-enabled="false" reuse-delay="1500"/>
+		<attributes weight="1770" commission-type="OTHER_ITEM" duration="43200" enchant-enabled="false"/>
 		<crystal type="C"/>
 		<damage radius="40" angle="240"/>
 		<stats>
@@ -329,7 +329,7 @@
 	<weapon id="29623" name="Reinforced Longbow" type="BOW" body-part="TWO_HAND" icon="icon.weapon_strengthening_long_bow_i00" mana-consume="2">
 	<!-- 30-day weapon. Cannot be exchanged or dropped. -->
 		<restriction freightable="false" tradable="false" dropable="false" sellable="false" private-sellable="false"/>
-		<attributes weight="1820" commission-type="OTHER_ITEM" duration="43200" enchant-enabled="false" reuse-delay="1500"/>
+		<attributes weight="1820" commission-type="OTHER_ITEM" duration="43200" enchant-enabled="false"/>
 		<crystal type="D"/>
 		<damage radius="40" angle="240"/>
 		<stats>
@@ -659,7 +659,7 @@
 	<item id="29651" name="Healing Potion" type="POTION" icon="icon.etc_lesser_potion_red_i00">
 	<!-- Magical potion that slowly restores HP. Lasts 15 sec. -->
 		<restriction freightable="false" olympiad-restricted="true" stackable="true" tradable="false" dropable="false" sellable="false" private-sellable="false" depositable="false"/>
-		<attributes weight="5" commission-type="POTION" immediate-effect="true" action="SKILL_REDUCE"/>
+		<attributes weight="5" commission-type="POTION" immediate-effect="true" action="SKILL_REDUCE" auto-use="SUPPLY"/>
 		<skill-reducer>
 			<skill id="2031" value="-1"/>  <!-- HP Potion -->
 		</skill-reducer>
@@ -668,7 +668,7 @@
 	<item id="29652" name="Major Healing Potion" type="POTION" icon="icon.etc_lesser_potion_red_i00">
 	<!-- Magical potion that slowly restores HP. Lasts 15 sec. -->
 		<restriction freightable="false" olympiad-restricted="true" coc-restricted="true" stackable="true" tradable="false" dropable="false" sellable="false" private-sellable="false" depositable="false"/>
-		<attributes weight="5" commission-type="POTION" reuse-delay="10000" for-npc="true" immediate-effect="true" action="SKILL_REDUCE"/>
+		<attributes weight="5" commission-type="POTION" reuse-delay="10000" for-npc="true" immediate-effect="true" action="SKILL_REDUCE" auto-use="SUPPLY"/>
 		<skill-reducer>
 			<skill id="2032" value="-1"/>  <!-- Greater HP Potion -->
 		</skill-reducer>

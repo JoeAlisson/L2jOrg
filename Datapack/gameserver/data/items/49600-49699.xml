@@ -498,9 +498,9 @@
 	<item id="49674" name="XP Boost Scroll" type="NONE" icon="icon.etc_recall_exp_scroll">
 	<!-- When used, XP/SP Gain when hunting +30% for 20 minutes. The effect remains active even after death. Cooldown 1 minute. -->
 		<restriction freightable="false" stackable="true" tradable="false" dropable="false" private-sellable="false" depositable="false"/>
-		<attributes action="SKILL_REDUCE" auto-use="SUPPLY"/>
+		<attributes action="SKILL_REDUCE" immediate-effect="true" auto-use="SUPPLY"/>
 		<skill-reducer>
-			<skill id="39134"/>  <!-- XP Boost Scroll-->
+			<skill id="32002" value="-1"/>  <!-- XP Boost Scroll - Exchangeable -->
 		</skill-reducer>
 	</item>
 

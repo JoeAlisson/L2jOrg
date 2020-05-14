@@ -39,4 +39,94 @@
             </vital-stat-modify>
         </effects>
     </skill>
+	
+	<skill id="3325" name="Bronze Bracelet">
+        <!-- Opens up 4 Talisman slots. -->
+        <icon initial="icon.dimension_bracelet_i03"/>
+        <attributes property="MAGIC" magic-critical-rate="5.0">
+        </attributes>
+        <target/>
+        <effects>
+            <effect name="TalismanSlot">
+                <power initial="4.0"/>
+            </effect>
+            <vital-stat-modify stat="MAX_MP" stat-add="MAX_MP">
+                <power initial="60.0"/>
+            </vital-stat-modify>
+			<stat-modify stat="ACCURACY">
+                <power initial="1.0"/>
+            </stat-modify>
+			<stat-modify stat="ACCURACY_MAGIC">
+                <power initial="1.0"/>
+            </stat-modify>
+			  <stat-modify mode="PER" stat="REGENERATE_MP_RATE">
+                <power initial="7.0"/>
+            </stat-modify>
+			  <stat-modify stat="WEIGHT_LIMIT">
+                <power initial="10000"/>
+            </stat-modify>
+        </effects>
+    </skill>
+	
+	<skill id="3326" name="Prata Bracelet">
+        <!-- Opens up 5 Talisman slots. -->
+        <icon initial="icon.dimension_bracelet_i04"/>
+        <attributes property="MAGIC" magic-critical-rate="5.0">
+        </attributes>
+        <target/>
+        <effects>
+            <effect name="TalismanSlot">
+                <power initial="5.0"/>
+            </effect>
+            <vital-stat-modify stat="MAX_MP" stat-add="MAX_MP">
+                <power initial="60.0"/>
+            </vital-stat-modify>
+			<stat-modify stat="ACCURACY">
+                <power initial="2.0"/>
+            </stat-modify>
+			<stat-modify stat="ACCURACY_MAGIC">
+                <power initial="2.0"/>
+            </stat-modify>
+			  <stat-modify mode="PER" stat="REGENERATE_MP_RATE">
+                <power initial="15.0"/>
+            </stat-modify>
+			<stat-modify mode="PER" stat="REGENERATE_HP_RATE">
+                <power initial="15.0"/>
+            </stat-modify>
+			  <stat-modify stat="WEIGHT_LIMIT">
+                <power initial="10000"/>
+            </stat-modify>
+        </effects>
+    </skill>
+	
+	<skill id="3327" name="Ouro Bracelet">
+        <!-- Opens up 6 Talisman slots. -->
+        <icon initial="icon.dimension_bracelet_i05"/>
+        <attributes property="MAGIC" magic-critical-rate="5.0">
+        </attributes>
+        <target/>
+        <effects>
+            <effect name="TalismanSlot">
+                <power initial="6.0"/>
+            </effect>
+            <vital-stat-modify stat="MAX_MP" stat-add="MAX_MP">
+                <power initial="60.0"/>
+            </vital-stat-modify>
+			<stat-modify stat="ACCURACY">
+                <power initial="2.0"/>
+            </stat-modify>
+			<stat-modify stat="ACCURACY_MAGIC">
+                <power initial="2.0"/>
+            </stat-modify>
+			  <stat-modify mode="PER" stat="REGENERATE_MP_RATE">
+                <power initial="15.0"/>
+            </stat-modify>
+			<stat-modify mode="PER" stat="REGENERATE_HP_RATE">
+                <power initial="15.0"/>
+            </stat-modify>
+			  <stat-modify stat="WEIGHT_LIMIT">
+                <power initial="10000"/>
+            </stat-modify>
+        </effects>
+    </skill>
 </list>

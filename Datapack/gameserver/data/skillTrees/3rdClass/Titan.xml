@@ -58,7 +58,7 @@
 		<skill skillName="Braveheart" skillId="440" skillLvl="1" getLevel="78" levelUpSp="13700000" />
 		<skill skillName="Broad Sweep" skillId="1628" skillLvl="2" getLevel="78" levelUpSp="13700000" />
 		<skill skillName="Over the Body" skillId="536" skillLvl="1" getLevel="78" levelUpSp="13700000">
-			<item id="900740" count="1" /> <!-- Scroll: Over the Body -->
+			<item id="90074" count="1" /> <!-- Scroll: Over the Body -->
 		</skill>
 		
 		<skill skillName="Frenzy" skillId="176" skillLvl="6" getLevel="79" levelUpSp="13700000" />

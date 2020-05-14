@@ -491,6 +491,79 @@
             <time initial="-1"/>
             <chance initial="-1"/>
         </abnormal>
+		 <effects>
+            <stat-modify stat="PHYSICAL_ATTACK" stat-add="PHYSICAL_ATTACK">
+                <power initial="284.0"/>
+            </stat-modify>
+            <stat-modify stat="MAGIC_ATTACK">
+                <power initial="392.0"/>
+            </stat-modify>
+             <stat-modify mode="PER" stat="PVP_DAMAGE_TAKEN">
+                <power initial="-10"/>
+            </stat-modify>
+            <stat-modify mode="PER" stat="PHYSICAL_SKILL_POWER" stat-add="SKILL_POWER_ADD">
+                <power initial="5.0"/>
+            </stat-modify>
+            <defence-trait>
+                <trait type="BOW">
+                    <power initial="5.0"/>
+                </trait>
+				<trait type="TWO_HAND_SWORD">
+                    <power initial="5.0"/>
+                </trait>
+                <trait type="DUAL">
+                    <power initial="5.0"/>
+                </trait>
+                <trait type="SWORD">
+                    <power initial="5.0"/>
+                </trait>
+                <trait type="DAGGER">
+                    <power initial="5.0"/>
+                </trait>
+                <trait type="DUALFIST">
+                    <power initial="5.0"/>
+                </trait>
+                <trait type="BLUNT">
+                    <power initial="5.0"/>
+                </trait>
+                <trait type="DUAL_DAGGER">
+                    <power initial="5.0"/>
+                </trait>
+                <trait type="SPEAR">
+                    <power initial="5.0"/>
+                </trait>
+            </defence-trait>
+			<base-stat type="STR">
+                <power initial="1.0"/>
+            </base-stat>
+            <base-stat type="CON">
+                <power initial="1.0"/>
+            </base-stat>
+			<base-stat type="DEX">
+                <power initial="1.0"/>
+            </base-stat>
+			<base-stat type="INT">
+                <power initial="1.0"/>
+            </base-stat>
+			<base-stat type="WIT">
+                <power initial="1.0"/>
+            </base-stat>
+			<base-stat type="MEN">
+                <power initial="1.0"/>
+            </base-stat>
+            <stat-modify stat="MAGIC_CRITICAL_RATE">
+                <power initial="20.0"/>
+            </stat-modify>
+            <stat-modify stat="CRITICAL_RATE">
+                <power initial="20.0"/>
+            </stat-modify>
+            <magic-cost type="MAGIC">
+                <power initial="5.0"/>
+            </magic-cost>
+            <reuse skill-type="PHYSIC">
+                <power initial="5.0"/>
+            </reuse>
+        </effects>
     </skill>
     <skill id="35021" name="Talisman of Baium - Removal" action="A1">
         <!-- The effect of Talisman of Baium weakens. -->
@@ -988,7 +1061,7 @@
                 <power initial="4.0"/>
             </stat-modify>
             <resist-abnormal-by-category category="DEBUFF">
-                <power initial="3"/>
+                <power initial="-3.0"/>
             </resist-abnormal-by-category>
             <defence-trait>
                 <trait type="PULL">
@@ -1056,7 +1129,7 @@
                 <power initial="4.0"/>
             </stat-modify>
             <resist-abnormal-by-category category="DEBUFF">
-                <power initial="3"/>
+                <power initial="-3.0"/>
             </resist-abnormal-by-category>
         </effects>
     </skill>

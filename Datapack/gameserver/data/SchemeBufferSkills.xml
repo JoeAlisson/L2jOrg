@@ -22,18 +22,32 @@
 		<buff id="1268" price="0" desc="Restores HP using inflicted damage." /> <!-- Vampiric Rage -->
 		<buff id="1303" price="0" desc="Increases crit. rate of magic attacks." /> <!-- Wild Magic -->
 		<buff id="1304" price="0" desc="Increases shield defense power." /> <!-- Advanced Block -->
-		<buff id="1352" price="0" desc="Increases resistance to atures." /> <!-- Elemental Protection -->
-		<buff id="1353" price="0" desc="Increases resistance to dark attack." /> <!-- Divine Protection -->
-		<buff id="1354" price="0" desc="Increases resistance to de-buff attack." /> <!-- Arcane Protection -->
+		</category>
+		<category type="Pet's">
+		<buff id="4700" price="0" desc="Increases P.Atk." /> <!-- Resist Shock -->
+		<buff id="4702" price="0" desc="Increases MP Recovery." /> <!-- Vampiric Rage -->
+		<buff id="4703" price="0" desc="Increases M.Atk and Decreases M.Skill Cooldown." /> <!-- Wild Magic -->
+		<buff id="4699" price="0" desc="Increases Critical Rate." /> <!-- Advanced Block -->
+		</category>
+		<category type="Specials">
 		<buff id="1355" price="0" desc="Increases mage abilities." /> <!-- Prophecy of Water -->
 		<buff id="1356" price="0" desc="Increases fighter abilities." /> <!-- Prophecy of Fire -->
 		<buff id="1357" price="0" desc="Increases dagger abilities." /> <!-- Prophecy of Wind -->
 		<buff id="1363" price="0" desc="Increases combat abilities." /> <!-- Chant of Victory -->
+		<buff id="1413" price="0" desc="Increases Mage abilities." /> <!-- Magnus' Chant -->
 		<buff id="1388" price="0" desc="Increases P. Atk." /> <!-- Greater Might -->
 		<buff id="1389" price="0" desc="Increases P. Def." /> <!-- Greater Shield -->
 		<buff id="1390" price="0" desc="Increases P. Atk." /> <!-- War Chant -->
 		<buff id="1391" price="0" desc="Increases P. Def." /> <!-- Earth Chant -->
 		<buff id="1397" price="0" desc="Decreases MP consumption rate." /> <!-- Clarity -->
+	</category>
+	<category type="Improve">
+		<buff id="1499" price="0" desc="Increases P. Atk and P. Def." /> <!-- Improve Combat -->
+		<buff id="1500" price="0" desc="Increases M. Atk and M. Def." /> <!-- Improve Magic -->
+		<buff id="1501" price="0" desc="Increases HP and MP." /> <!-- Improve Condition -->
+		<buff id="1502" price="0" desc="Increases Critical Atk." /> <!-- Improve Critical Attack -->
+		<buff id="1503" price="0" desc="Increases Shield Def." /> <!-- Improve Shield Defense -->
+		<buff id="1504" price="0" desc="Increases Movement." /> <!-- Improve Movement -->
 	</category>
 	<category type="Dances">
 		<buff id="271" price="0" desc="Increases P. Atk." /> <!-- Dance of the Warrior -->
@@ -43,11 +57,10 @@
 		<buff id="275" price="0" desc="Increases attack speed." /> <!-- Dance of Fury -->
 		<buff id="276" price="0" desc="Increases Casting Spd." /> <!-- Dance of Concentration -->
 		<buff id="277" price="0" desc="Sacred power to physical attack." /> <!-- Dance of Light -->
-		<buff id="307" price="0" desc="Increases water resistance." /> <!-- Dance of Aqua Guard -->
-		<buff id="309" price="0" desc="Increases earth resistance." /> <!-- Dance of Earth Guard -->
 		<buff id="310" price="0" desc="Restores HP by inflicted damage." /> <!-- Dance of the Vampire -->
 		<buff id="311" price="0" desc="Increases resistance to terrain damage." /> <!-- Dance of Protection -->
 		<buff id="365" price="0" desc="Increases rate of magic crit. damage." /> <!-- Siren's Dance -->
+		<buff id="915" price="0" desc="Reduces def. and increase atk. power." /> <!-- Dance of Berserker -->
 	</category>
 	<category type="Songs">
 		<buff id="264" price="0" desc="Increases P. Def." /> <!-- Song of Earth -->
@@ -59,8 +72,6 @@
 		<buff id="270" price="0" desc="Increases resistance to dark magic." /> <!-- Song of Invocation -->
 		<buff id="304" price="0" desc="Increases maximum HP." /> <!-- Song of Vitality -->
 		<buff id="305" price="0" desc="Reflects damage received." /> <!-- Song of Vengeance -->
-		<buff id="306" price="0" desc="Increases resistance to fire." /> <!-- Song of Flame Guard -->
-		<buff id="308" price="0" desc="Increases resistance to wind." /> <!-- Song of Storm Guard -->
 		<buff id="349" price="0" desc="Decreases re-use time." /> <!-- Song of Renewal -->
 		<buff id="364" price="0" desc="Decreases re-use time of physical skills." /> <!-- Song of Champion -->
 	</category>

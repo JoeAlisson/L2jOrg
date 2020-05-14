@@ -228,7 +228,7 @@
             <mana-init initial="18"/>
             <mana initial="87"/>
             <item initial="3031"/>
-            <item-count initial="100"/>
+            <item-count initial="200"/>
         </consume>
         <target type="TARGET"/>
         <abnormal type="RESURRECTION_SPECIAL">
@@ -284,6 +284,61 @@
             <effect name="DebuffBlock"/>
         </effects>
     </skill>
+	
+	 <skill id="1413" name="Chant of Magnus" action="A2" type="MAGIC">
+<!-- For 5 min., a powerful spirit acts to increase all party members' Max MP by 15%, MP Recovery Bonus by 1.5 when equipped with light or heavy armor, 
+MP Recovery Bonus by 4 when equipped with a robe, M. Def. by 30%, M. Atk. by 30%, Casting Spd. by 20% -->       
+	   <icon initial="icon.skill1413"/>
+        <attributes property="PHYSIC" magic-critical-rate="5.0">
+            <magic-level initial="76"/>
+            <cast-range initial="400"/>
+            <reuse initial="4000"/>
+            <effect-point initial="666"/>
+            <effect-range initial="600"/>
+            <hit-time initial="4000"/>
+        </attributes>
+        <consume>
+            <mana-init initial="15"/>
+            <mana initial="72"/>
+            <item initial="3031"/>
+            <item-count initial="20"/>
+        </consume>
+        <target type="TARGET"/>
+        <abnormal type="MULTI_BUFF">
+            <level initial="1"/>
+            <time initial="600"/>
+            <chance initial="-1"/>
+        </abnormal>
+        <conditions>
+            <target>
+                <party/>
+            </target>
+        </conditions>
+        <effects>
+			<stat-modify mode="PER" stat="MAX_MP">
+                <power initial="15.0"/>
+            </stat-modify>
+            <stat-modify mode="PER" stat="REGENERATE_MP_RATE" stat-add="REGENERATE_MP_RATE">
+                <power initial="15.0"/>
+            </stat-modify>
+            <stat-modify mode="PER" stat="MAGIC_ATTACK">
+                <power initial="30.0"/>
+            </stat-modify>
+            <stat-modify mode="PER" stat="MAGICAL_DEFENCE">
+                <power initial="30.0"/>
+            </stat-modify>
+            <stat-modify mode="PER" stat="MAGIC_ATTACK_SPEED">
+                <power initial="20.0"/>
+            </stat-modify>
+            <resist-abnormal-by-category category="DEBUFF">
+                <power initial="-10.0"/>
+            </resist-abnormal-by-category>
+            <magic-cost type="MAGIC">
+                <power initial="-3.0"/>
+            </magic-cost>
+        </effects>
+    </skill>
+	
     <skill id="1414" name="Victories of Pa'agrio" max-level="2" action="A2" type="MAGIC">
         <!--
             level 1: Nearby clan members' Max CP +10%, CP Recovery Bonus +20%, P. Accuracy/M. Accuracy +4, P. Evasion/M. Evasion +4, P. Atk./M. Atk. +15%, Atk. Spd./Casting Spd. +10%, P. Critical/M. Critical Rate +15%, and P. Critical Damage/M. Critical Damage +15% for 10 minutes with the help of a great spirit. Consumes 10 minutes0 Spirit Ore.
@@ -490,7 +545,7 @@
         <consume>
             <mana initial="72"/>
             <item initial="3031"/>
-            <item-count initial="100"/>
+            <item-count initial="200"/>
         </consume>
         <target scope="RANGE" object="CLAN" range="1000"/>
         <effects>
@@ -572,23 +627,23 @@
                 <value level="10">143</value>
             </mana>
             <item initial="3031"/>
-            <item-count initial="2">
-                <value level="6">3</value>
+            <item-count initial="5">
+                <value level="6">7</value>
             </item-count>
         </consume>
         <target scope="PARTY" object="FRIEND" range="1000"/>
         <effects>
             <effect name="ManaHealByLevel">
-                <power initial="264">
-                    <value level="2">277</value>
-                    <value level="3">292</value>
-                    <value level="4">306</value>
-                    <value level="5">321</value>
-                    <value level="6">343</value>
-                    <value level="7">367</value>
-                    <value level="8">393</value>
-                    <value level="9">420</value>
-                    <value level="10">450</value>
+                <power initial="240.0">
+                    <value level="2">252.0</value>
+                    <value level="3">265.0</value>
+                    <value level="4">278.0</value>
+                    <value level="5">292.0</value>
+                    <value level="6">312.0</value>
+                    <value level="7">334.0</value>
+                    <value level="8">357.0</value>
+                    <value level="9">382.0</value>
+                    <value level="10">409.0</value>
                 </power>
             </effect>
         </effects>
@@ -683,13 +738,15 @@
          -->
         <icon initial="icon.skill1432"/>
         <attributes property="PHYSIC" magic-critical-rate="5.0" auto-use="BUFF">
-            <magic-level initial="25">
-                <value level="2">50</value>
-                <value level="3">76</value>
-                <value level="4">78</value>
-                <value level="5">80</value>
+            <magic-level initial="10">
+                <value level="2">28</value>
+                <value level="3">36</value>
+                <value level="4">44</value>
+                <value level="5">56</value>
             </magic-level>
+            <cast-range initial="-1"/>
             <reuse initial="10000"/>
+            <effect-range initial="-1"/>
             <hit-time initial="2000"/>
         </attributes>
         <consume>
@@ -718,8 +775,8 @@
             <chance initial="-1"/>
         </abnormal>
         <effects>
-            <stat-modify mode="PER" stat="PHYSICAL_ATTACK">
-                <power initial="10">
+            <stat-modify mode="PER" stat="PHYSICAL_ATTACK" stat-add="PHYSICAL_ATTACK">
+                <power initial="8.0">
                     <value level="2">12.0</value>
                     <value level="3">15.0</value>
                     <value level="4">20.0</value>
@@ -737,7 +794,8 @@
             level 5: Has a chance to mark the enemy with a Death Mark for 10 seconds. Enemies marked with the Death Mark will receive more damage from Physical Critical Damage and Magic Critical Damage. \n\nDeath Mark Stage 5 activated
          -->
         <icon initial="icon.skill1435"/>
-        <attributes property="MAGIC"/>
+        <attributes property="MAGIC">
+        </attributes>
         <target/>
         <effects>
             <trigger-skill-by-attack skill="45154" target="ENEMY">
@@ -810,8 +868,11 @@
                 <value level="2">55</value>
                 <value level="3">64</value>
             </magic-level>
+            <cast-range initial="-1"/>
             <reuse initial="150000"/>
+            <effect-range initial="-1"/>
             <hit-time initial="1500"/>
+            <activate-rate initial="-1"/>
         </attributes>
         <consume>
             <mana-init initial="8">
@@ -824,23 +885,6 @@
             </mana>
         </consume>
         <target/>
-        <abnormal>
-            <time initial="1200"/>
-        </abnormal>
-        <effects>
-            <effect name="HealPercent">
-                <power initial="15">
-                    <value level="2">25</value>
-                    <value level="3">35</value>
-                </power>
-            </effect>
-            <vital-stat-modify stat="MAX_HP">
-                <power initial="15">
-                    <value level="2">25</value>
-                    <value level="2">40</value>
-                </power>
-            </vital-stat-modify>
-        </effects>
     </skill>
     <skill id="1444" name="Art of Rapier" max-level="5">
         <!--
@@ -851,10 +895,11 @@
             level 5: Atk. Spd. +50 when equipping a Rapier.
          -->
         <icon initial="Icon.ev_invasion_gun_shoot"/>
-        <attributes property="MAGIC"/>
+        <attributes property="MAGIC">
+        </attributes>
         <target/>
         <effects>
-            <stat-modify stat="PHYSICAL_ATTACK_SPEED">
+            <stat-modify stat="PHYSICAL_ATTACK_SPEED" stat-add="PHYSICAL_ATTACK_SPEED">
                 <power initial="10.0">
                     <value level="2">20.0</value>
                     <value level="3">30.0</value>
@@ -928,7 +973,7 @@
                 <value level="4">-490</value>
                 <value level="5">-500</value>
             </effect-point>
-            <effect-range initial="900"/>
+            <effect-range initial="600"/>
             <hit-time initial="1500"/>
         </attributes>
         <consume>
@@ -1317,6 +1362,47 @@
             </stat-modify>
             <stat-modify stat="ACCURACY">
                 <power initial="-8.0"/>
+            </stat-modify>
+        </effects>
+    </skill>
+	 <skill id="1499" name=" Improve Combat"  max-level="3" action="A2">
+       <!-- Combines P. Atk. increase and P. Def. increase to have more advanced combat power increase effect. For 40 min., increases P. Atk. by 15% and P. Def. by 15%. -->
+		<icon initial="icon.skill1499"/>
+        <attributes property="PHYSIC" magic-critical-rate="-5.0">
+            <magic-level initial="70"/>
+            <cast-range initial="900"/>
+            <reuse initial="1000"/>
+            <effect-point initial="1"/>
+            <effect-range initial="1500"/>
+            <hit-time initial="500"/>
+        </attributes>
+        <consume>
+            <mana-init initial="15"/>
+            <mana initial="75"/>
+        </consume>
+        <target type="TARGET"/>
+        <abnormal type="IMPROVE_PA_PD_UP">
+            <level initial="2"/>
+            <time initial="3600"/>
+            <chance initial="-1"/>
+        </abnormal>
+        <effects>
+            <dispel>
+                <abnormal type="PD_UP">
+                    <power initial="9.0"/>
+                </abnormal>
+                <abnormal type="PA_UP">
+                    <power initial="9.0"/>
+                </abnormal>
+            </dispel>
+            <block-abnormal>
+                <abnormals>PD_UP PA_UP</abnormals>
+            </block-abnormal>
+            <stat-modify mode="PER" stat="PHYSICAL_ATTACK">
+                <power initial="15.0"/>
+            </stat-modify>
+            <stat-modify mode="PER" stat="PHYSICAL_DEFENCE">
+                <power initial="15.0"/>
             </stat-modify>
         </effects>
     </skill>

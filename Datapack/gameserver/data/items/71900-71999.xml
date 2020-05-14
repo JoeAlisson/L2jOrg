@@ -318,13 +318,19 @@
 	<item id="71951" name="VIP Battle Scroll" type="NONE" icon="icon.ev_charge_scroll">
 	<!-- For 20 minutes, P. Atk. +250, M. Atk. +400, P. Critical/M. Skill Critical Rate +30, Atk. Spd./Casting Spd. +80, P. Def./M. Def. +300, Max HP/Max MP/Max CP +700. The effect remains active even after death. Cooldown 1 minute. -->
 		<restriction stackable="true" tradable="false" dropable="false" sellable="false" private-sellable="false" depositable="false"/>
-		<attributes auto-use="SUPPLY"/>
+		<attributes immediate-effect="true" action="SKILL_REDUCE" auto-use="SUPPLY"/>
+		<skill-reducer>
+			<skill id="54071" value="-1"/>  <!-- Battle Scroll -->
+		</skill-reducer>
 	</item>
 
 	<item id="71952" name="Scroll: VIP XP/SP Boost" type="POTION" icon="icon.bm_elmoaden_exp_scrl">
 	<!-- For 20 min., XP/SP gain +120%. Effect remains even after death. -->
 		<restriction stackable="true" tradable="false" dropable="false" sellable="false" private-sellable="false" depositable="false"/>
-		<attributes weight="5" auto-use="SUPPLY"/>
+		<attributes immediate-effect="true" action="SKILL_REDUCE" auto-use="SUPPLY"/>
+		<skill-reducer>
+			<skill id="55000" level="4" value="-1"/>  <!-- VIP XP/SP Boost -->
+		</skill-reducer>
 	</item>
 
 	<armor id="71953" name="VIP Agathion Bracelet - 30-day" type="NONE" body-part="LEFT_BRACELET" icon="icon.lbracelet_agathion_charm">
@@ -399,25 +405,55 @@
 	<item id="71963" name="Daily Gift - VIP 8" type="NONE" icon="BranchIcon.Icon.etc_vip_present_i08">
 	<!-- Double-click to obtain the following: 3 Blessed Scroll of Escape, 3 Blessed Scroll of Resurrection, 10 Special HP Potions, 30 Soulshot Tickets, 6 VIP Battle Scrolls, 6 Scroll: VIP XP/SP Boost, and 300 VIP Coins. -->
 		<restriction stackable="true" tradable="false" dropable="false" sellable="false" private-sellable="false" depositable="false"/>
-		<attributes weight="10"/>
+		<attributes weight="10" immediate-effect="true" action="PEEL"/>
+		<extract >
+			<item id="1538" min-count="3" max-count="3" chance="100000000"/>  <!-- Blessed Scroll of Escape -->
+			<item id="3936" min-count="3" max-count="3" chance="100000000"/>  <!-- Blessed Scroll of Resurrection -->
+			<item id="71966" min-count="6" max-count="6" chance="100000000"/>  <!-- XP Boosting Rune -->
+			<item id="90907" min-count="30" max-count="30" chance="100000000"/>  <!-- Soulshot Tickets -->
+			<item id="71951" min-count="6" max-count="6" chance="100000000"/>  <!-- VIP Battle Scrolls -->
+			<item id="29652" min-count="10" max-count="10" chance="100000000"/>  <!-- Major Healing Potion -->
+			<item id="29520" min-count="300" max-count="300" chance="100000000"/>  <!-- VIP Coin -->
+		</extract>
 	</item>
 
 	<item id="71964" name="Daily Gift - VIP 9" type="NONE" icon="BranchIcon.Icon.etc_vip_present_i09">
 	<!-- Double-click to obtain the following: 5 Blessed Scroll of Escape, 5 Blessed Scroll of Resurrection, 30 Special HP Potions, 50 Soulshot Tickets, 9 VIP Battle Scrolls, 9 Scroll: VIP XP/SP Boost, and 500 VIP Coins. -->
 		<restriction stackable="true" tradable="false" dropable="false" sellable="false" private-sellable="false" depositable="false"/>
-		<attributes weight="10"/>
+		<attributes weight="10" immediate-effect="true" action="PEEL"/>
+		<extract >
+			<item id="1538" min-count="5" max-count="5" chance="100000000"/>  <!-- Blessed Scroll of Escape -->
+			<item id="3936" min-count="5" max-count="5" chance="100000000"/>  <!-- Blessed Scroll of Resurrection -->
+			<item id="71966" min-count="9" max-count="9" chance="100000000"/>  <!-- XP Boosting Rune -->
+			<item id="90907" min-count="50" max-count="50" chance="100000000"/>  <!-- Soulshot Tickets -->
+			<item id="71951" min-count="9" max-count="9" chance="100000000"/>  <!-- VIP Battle Scrolls -->
+			<item id="29652" min-count="30" max-count="30" chance="100000000"/>  <!-- Major Healing Potion -->
+			<item id="29520" min-count="500" max-count="500" chance="100000000"/>  <!-- VIP Coin -->
+		</extract>
 	</item>
 
 	<item id="71965" name="Daily Gift - VIP 10" type="NONE" icon="BranchIcon.Icon.etc_vip_present_i10">
 	<!-- Double-click to obtain the following: 10 Blessed Scroll of Escape, 10 Blessed Scroll of Resurrection, 50 Special HP Potions, 100 Soulshot Tickets, 15 VIP Battle Scrolls, 15 Scroll: VIP XP/SP Boost, 1 Aden Talisman Enchant Package, and 700 VIP Coins. -->
 		<restriction stackable="true" tradable="false" dropable="false" sellable="false" private-sellable="false" depositable="false"/>
-		<attributes weight="10"/>
+		<attributes weight="10" immediate-effect="true" action="PEEL"/>
+		<extract >
+			<item id="1538" min-count="10" max-count="10" chance="100000000"/>  <!-- Blessed Scroll of Escape -->
+			<item id="3936" min-count="10" max-count="10" chance="100000000"/>  <!-- Blessed Scroll of Resurrection -->
+			<item id="71966" min-count="15" max-count="15" chance="100000000"/>  <!-- XP Boosting Rune -->
+			<item id="90907" min-count="100" max-count="100" chance="100000000"/>  <!-- Soulshot Tickets -->
+			<item id="71951" min-count="15" max-count="15" chance="100000000"/>  <!-- VIP Battle Scrolls -->
+			<item id="29652" min-count="50" max-count="50" chance="100000000"/>  <!-- Major Healing Potion -->
+			<item id="29520" min-count="700" max-count="700" chance="100000000"/>  <!-- VIP Coin -->
+		</extract>
 	</item>
 
 	<item id="71966" name="XP Boosting Rune" type="RUNE" icon="br_cashtex.item.br_cash_rune_of_exp_i00">
 	<!-- Increases XP and SP acquired in hunt by 100%. -->
 		<restriction tradable="false" dropable="false" private-sellable="false" depositable="false"/>
-		<attributes/>
+		<attributes weight="5" immediate-effect="true" action="SKILL_REDUCE" auto-use="SUPPLY"/>
+		<skill-reducer>
+			<skill id="55000" level="1" value="-1"/>  <!-- XP/SP Boost -->
+		</skill-reducer>
 	</item>
 
 	<item id="71967" name="XP Boosting Rune (7-day) Box" type="NONE" icon="icon.etc_pi_gift_box_i00">

@@ -854,13 +854,13 @@
 	<item id="6392" name="Event - Medal" type="NONE" icon="icon.etc_event_medal_i00">
 	<!-- L2 Medal Collection Event - If you take it to an Event Manager, he will trade it for a prize item of your choice. -->
 		<restriction freightable="false" stackable="true" depositable="false"/>
-		<attributes/>
+		<attributes weight="5" price="20000" />
 	</item>
 
 	<item id="6393" name="Event - Glittering Medal" type="NONE" icon="icon.etc_event_glitter_medal_i00">
 	<!-- L2 Medal Collection Event - Used to raise the grade of a collector during the event. -->
 		<restriction freightable="false" stackable="true" depositable="false"/>
-		<attributes/>
+		<attributes weight="5" price="100000" />
 	</item>
 
 	<armor id="6394" name="Red Party Mask" type="NONE" body-part="HAIR" icon="icon.etc_party_mask_i01">

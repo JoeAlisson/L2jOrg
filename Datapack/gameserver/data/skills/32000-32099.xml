@@ -66,14 +66,11 @@
             <effect-range initial="-1"/>
         </attributes>
         <target/>
-        <abnormal type="VOTE">
+        <abnormal>
             <level initial="1"/>
             <time initial="1200"/>
             <chance initial="-1"/>
         </abnormal>
-        <conditions>
-            <level max-level="85" scope="PASSIVE"/>
-        </conditions>
         <effects>
             <stat-modify stat="BONUS_EXP" mode="PER">
                 <power initial="30.0"/>

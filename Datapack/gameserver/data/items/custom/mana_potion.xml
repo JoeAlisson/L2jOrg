@@ -6,7 +6,7 @@
         <condition add-name="true" msg-id="113">
             <player flying="false"/>
         </condition>
-        <attributes weight="5" price="2000" commission-type="POTION" for-npc="true" immediate-effect="true" action="SKILL_REDUCE"/>
+        <attributes weight="5" price="2000" commission-type="POTION" reuse-delay="2000" for-npc="true" immediate-effect="true" action="SKILL_REDUCE" auto-use="SUPPLY"/>
         <skill-reducer>
             <skill id="26030"/>  <!-- Mana Potion -->
         </skill-reducer>

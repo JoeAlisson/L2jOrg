@@ -21,10 +21,10 @@
 	<armor id="49703" name="Talisman Bracelet Lv. 4" type="NONE" body-part="RIGHT_BRACELET" icon="icon.dimension_bracelet_i03">
 	<!-- When equipped, opens up 4 Talisman slots.\n\n<Special Effects>\nHP/MP Recovery Bonus +7%, P. Accuracy +1, M. Accuracy +1, Weight Limit +7,000. Two Talisman Bracelets of the same level can be combined. -->
 		<restriction dropable="false" sellable="false"/>
-		<attributes enchant-enabled="false" />
+		<attributes weight="150" price="27000000" commission-type="BRACELET" enchant-enabled="false" />
 		<crystal />
-		<skills>
-			<skill id="50912" level="4" /> <!-- Talisman Bracelet Lv. 4 -->
+				<skills>
+			<skill id="3325" value="-1"/>  <!-- Steel Bracelet -->
 		</skills>
 	</armor>
 

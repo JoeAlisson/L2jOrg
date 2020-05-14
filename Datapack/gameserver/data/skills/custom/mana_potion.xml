@@ -8,7 +8,7 @@
         <target/>
         <effects>
             <mp>
-                <power initial="100"/>
+                <power initial="500"/>
             </mp>
         </effects>
     </skill>

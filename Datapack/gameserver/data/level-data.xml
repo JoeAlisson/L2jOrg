@@ -76,20 +76,20 @@
     <level-data level="73" experience="4273257147" xp-percent-lost="4.0"/>
     <level-data level="74" experience="4778730307" xp-percent-lost="4.0"/>
     <level-data level="75" experience="5340152663" xp-percent-lost="4.0"/>
-    <level-data level="76" experience="5963335188" xp-percent-lost="2.5" characteristic-points="1"/>
-    <level-data level="77" experience="7138805249" xp-percent-lost="2.0" characteristic-points="2"/>
-    <level-data level="78" experience="9372198365" xp-percent-lost="1.5" characteristic-points="3"/>
-    <level-data level="79" experience="16072377712" characteristic-points="4"  />
-    <level-data level="80" experience="38406308870" characteristic-points="5" />
-    <level-data level="81" experience="150075964660" characteristic-points="6" />
-    <level-data level="82" experience="279783329565" characteristic-points="7" />
-    <level-data level="83" experience="454748284484" characteristic-points="8" />
-    <level-data level="84" experience="673468617186" characteristic-points="9" />
-    <level-data level="85" experience="1548349947994" characteristic-points="10" />
-    <level-data level="86" experience="5922756602034" characteristic-points="11" />
-    <level-data level="87" experience="12484366583094" characteristic-points="12" />
-    <level-data level="88" experience="22982942552790" characteristic-points="13" />
-    <level-data level="89" experience="35581233716425" characteristic-points="14" />
-    <level-data level="90" experience="50699183112788" characteristic-points="15" />
-    <level-data level="91" experience="80935183110000" />
+    <level-data level="76" experience="5963335188" xp-percent-lost="2.5" characteristic-points="10"/>
+    <level-data level="77" experience="7138805249" xp-percent-lost="2.0" characteristic-points="20"/>
+    <level-data level="78" experience="9372198365" xp-percent-lost="1.5" characteristic-points="30"/>
+    <level-data level="79" experience="16072377712" characteristic-points="40"  />
+    <level-data level="80" experience="38406308870" characteristic-points="50" />
+    <level-data level="81" experience="150075964660" characteristic-points="60" />
+    <level-data level="82" experience="279783329565" characteristic-points="70" />
+    <level-data level="83" experience="454748284484" characteristic-points="80" />
+    <level-data level="84" experience="673468617186" characteristic-points="90" />
+    <level-data level="85" experience="1548349947994" characteristic-points="100" />
+    <level-data level="86" experience="5922756602034" characteristic-points="110" />
+    <level-data level="87" experience="12484366583094" characteristic-points="120" />
+    <level-data level="88" experience="22982942552790" characteristic-points="130" />
+    <level-data level="89" experience="35581233716425" characteristic-points="140" />
+    <level-data level="90" experience="50699183112788" characteristic-points="150" />
+	<level-data level="91" experience="100699183112788" characteristic-points="200" />
 </list>

@@ -2,8 +2,26 @@
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns="http://l2j.org" xsi:schemaLocation="http://l2j.org ../xsd/skillTrees.xsd">
 	<skillTree type="classSkillTree">
 		<skill skillName="Lucky" skillId="194" skillLvl="1" getLevel="1" autoGet="true" />
+		<skill skillName="Mount - Gold Maned Lion" skillId="1833" skillLvl="1" getLevel="40" autoGet="false">
+			<item id="90038" count="1" /> <!-- Mount - Gold Maned Lion -->
+		</skill>
 		<skill skillName="Pirate" skillId="1800" skillLvl="1" getLevel="45" autoGet="true" />
+		<skill skillName="Mount - Saber Tooth Cougar" skillId="1835" skillLvl="1" getLevel="50" autoGet="false">
+			<item id="90040" count="1" /> <!-- Mount - Saber Tooth Cougar -->
+		</skill>
+		<skill skillName="Mount - Kukuru" skillId="1836" skillLvl="1" getLevel="55" autoGet="false">
+			<item id="90041" count="1" /> <!-- Mount - Kukuru -->
+		</skill>
 		<skill skillName="Dark Assassin" skillId="1801" skillLvl="1" getLevel="60" autoGet="true" />
+		<skill skillName="Mount - Black Bear" skillId="1837" skillLvl="1" getLevel="65" autoGet="false">
+			<item id="90042" count="1" /> <!-- Mount - Black Bear -->
+		</skill>
 		<skill skillName="White Assassin" skillId="1802" skillLvl="1" getLevel="70" autoGet="true" />
+		<skill skillName="Mount - Pegasus" skillId="1834" skillLvl="1" getLevel="76" autoGet="false">
+			<item id="90039" count="1" /> <!-- Mount - Pegasus -->
+		</skill>
+		<skill skillName="Mount - Griffin" skillId="62002" skillLvl="1" getLevel="80" autoGet="false">
+			<item id="91946" count="1" /> <!-- Mount - Griffin -->
+		</skill>
 	</skillTree>
 </list>
