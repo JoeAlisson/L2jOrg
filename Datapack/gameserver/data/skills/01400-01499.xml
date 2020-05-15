@@ -386,9 +386,9 @@ MP Recovery Bonus by 4 when equipped with a robe, M. Def. by 30%, M. Atk. by 30%
             <stat-modify stat="ACCURACY_MAGIC">
                 <power initial="4.0"/>
             </stat-modify>
-            <stat-hp-based hp-percent="0" stat="EVASION_RATE">
+            <stat-modify stat="EVASION_RATE">
                 <power initial="4.0"/>
-            </stat-hp-based>
+            </stat-modify>
             <stat-modify stat="MAGIC_EVASION_RATE">
                 <power initial="4.0"/>
             </stat-modify>
@@ -408,11 +408,11 @@ MP Recovery Bonus by 4 when equipped with a robe, M. Def. by 30%, M. Atk. by 30%
             <stat-modify mode="PER" stat="MAGIC_ATTACK_SPEED">
                 <power initial="10.0"/>
             </stat-modify>
-            <stat-hp-based hp-percent="0" mode="PER" stat="CRITICAL_RATE">
+            <stat-modify mode="PER" stat="CRITICAL_RATE">
                 <power initial="15.0">
                     <value level="2">20.0</value>
                 </power>
-            </stat-hp-based>
+            </stat-modify>
             <stat-modify mode="PER" stat="MAGIC_CRITICAL_RATE">
                 <power initial="15.0">
                     <value level="2">20.0</value>

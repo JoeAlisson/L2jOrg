@@ -162,11 +162,11 @@
                     <value level="10">60.0</value>
                 </power>
             </stat-modify>
-            <stat-hp-based hp-percent="0" stat="CRITICAL_RATE" stat-add="CRITICAL_RATE">
+            <stat-modify stat="CRITICAL_RATE" stat-add="CRITICAL_RATE">
                 <power>
                     <value level="8">5.0</value>
                 </power>
-            </stat-hp-based>
+            </stat-modify>
             <stat-modify stat="MAGIC_CRITICAL_DAMAGE" stat-add="MAGIC_CRITICAL_DAMAGE_ADD">
                 <power>
                     <value level="8">5.0</value>
@@ -423,12 +423,12 @@
                     <value level="7">20.0</value>
                 </power>
             </stat-modify>
-            <stat-hp-based hp-percent="0" stat="CRITICAL_RATE">
+            <stat-modify stat="CRITICAL_RATE">
                 <power>
                     <value level="6">10.0</value>
                     <value level="7">20.0</value>
                 </power>
-            </stat-hp-based>
+            </stat-modify>
             <magic-cost type="MAGIC">
                 <power>
                     <value level="5">-2.0</value>
@@ -669,12 +669,12 @@
                     <value level="6">2.0</value>
                 </power>
             </stat-modify>
-            <stat-hp-based hp-percent="0" mode="PER" stat="EVASION_RATE">
+            <stat-modify mode="PER" stat="EVASION_RATE">
                 <power>
                     <value level="2">1.0</value>
                     <value level="6">2.0</value>
                 </power>
-            </stat-hp-based>
+            </stat-modify>
             <vital-stat-modify stat="MAX_HP">
                 <power>
                     <value level="3">80.0</value>
@@ -1054,9 +1054,9 @@
             <stat-modify mode="PER" stat="MAGIC_SUCCESS_RES">
                 <power initial="2.0"/>
             </stat-modify>
-            <stat-hp-based hp-percent="0" mode="PER" stat="EVASION_RATE">
+            <stat-modify mode="PER" stat="EVASION_RATE">
                 <power initial="4.0"/>
-            </stat-hp-based>
+            </stat-modify>
             <stat-modify mode="PER" stat="MAGIC_EVASION_RATE">
                 <power initial="4.0"/>
             </stat-modify>
@@ -1122,9 +1122,9 @@
             <stat-modify mode="PER" stat="MAGIC_SUCCESS_RES">
                 <power initial="2.0"/>
             </stat-modify>
-            <stat-hp-based hp-percent="0" mode="PER" stat="EVASION_RATE">
+            <stat-modify mode="PER" stat="EVASION_RATE">
                 <power initial="4.0"/>
-            </stat-hp-based>
+            </stat-modify>
             <stat-modify mode="PER" stat="MAGIC_EVASION_RATE">
                 <power initial="4.0"/>
             </stat-modify>
@@ -1365,9 +1365,9 @@
             <stat-modify mode="PER" stat="MAGIC_CRITICAL_RATE">
                 <power initial="4.0"/>
             </stat-modify>
-            <stat-hp-based hp-percent="0" mode="PER" stat="CRITICAL_RATE">
+            <stat-modify mode="PER" stat="CRITICAL_RATE">
                 <power initial="4.0"/>
-            </stat-hp-based>
+            </stat-modify>
             <stat-modify stat="REFLECT_DAMAGE_PERCENT">
                 <power initial="6.0"/>
             </stat-modify>

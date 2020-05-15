@@ -115,9 +115,9 @@ public final class HomeBoard implements IParseBoardHandler {
 				returnHtml = returnHtml.replaceAll("%alliance%", "Could not find it");
 				returnHtml = returnHtml.replaceAll("%country%", "Could not found it");
 				returnHtml = returnHtml.replaceAll("%class%", activeChar.getBaseTemplate().getClassId().name().replace("_", " "));
-				returnHtml = returnHtml.replaceAll("%exp%", String.valueOf(activeChar.getExp()).toString());
-				returnHtml = returnHtml.replaceAll("%adena%", String.valueOf(activeChar.getAdena()).toString());
-				returnHtml = returnHtml.replaceAll("%online%", String.valueOf(activeChar.getUptime()).toString());
+				returnHtml = returnHtml.replaceAll("%exp%", String.valueOf(activeChar.getExp()));
+				returnHtml = returnHtml.replaceAll("%adena%", String.valueOf(activeChar.getAdena()));
+				returnHtml = returnHtml.replaceAll("%online%", String.valueOf(activeChar.getUptime()));
 				returnHtml = returnHtml.replaceAll("%onlinePlayers%", String.valueOf(World.getInstance().getPlayers().size()));
 			}
 		} else if (command.startsWith("_bbstop;")) {
@@ -133,9 +133,9 @@ public final class HomeBoard implements IParseBoardHandler {
 				returnHtml = returnHtml.replaceAll("%alliance%", "Could not find it");
 				returnHtml = returnHtml.replaceAll("%country%", "Could not found it");
 				returnHtml = returnHtml.replaceAll("%class%", activeChar.getBaseTemplate().getClassId().name().replace("_", " "));
-				returnHtml = returnHtml.replaceAll("%exp%", String.valueOf(activeChar.getExp()).toString());
-				returnHtml = returnHtml.replaceAll("%adena%", String.valueOf(activeChar.getAdena()).toString());
-				returnHtml = returnHtml.replaceAll("%online%", String.valueOf(activeChar.getUptime()).toString());
+				returnHtml = returnHtml.replaceAll("%exp%", String.valueOf(activeChar.getExp()));
+				returnHtml = returnHtml.replaceAll("%adena%", String.valueOf(activeChar.getAdena()));
+				returnHtml = returnHtml.replaceAll("%online%", String.valueOf(activeChar.getUptime()));
 				returnHtml = returnHtml.replaceAll("%onlinePlayers%", String.valueOf(World.getInstance().getPlayers().size()));
 			}
 		} else if (command.startsWith("_bbsmultisell")) {
@@ -266,9 +266,9 @@ public final class HomeBoard implements IParseBoardHandler {
 					returnHtml = returnHtml.replaceAll("%alliance%", "Could not find it");
 					returnHtml = returnHtml.replaceAll("%country%", "Could not found it");
 					returnHtml = returnHtml.replaceAll("%class%", activeChar.getBaseTemplate().getClassId().name().replace("_", " "));
-					returnHtml = returnHtml.replaceAll("%exp%", String.valueOf(activeChar.getExp()).toString());
-					returnHtml = returnHtml.replaceAll("%adena%", String.valueOf(activeChar.getAdena()).toString());
-					returnHtml = returnHtml.replaceAll("%online%", String.valueOf(activeChar.getUptime()).toString());
+					returnHtml = returnHtml.replaceAll("%exp%", String.valueOf(activeChar.getExp()));
+					returnHtml = returnHtml.replaceAll("%adena%", String.valueOf(activeChar.getAdena()));
+					returnHtml = returnHtml.replaceAll("%online%", String.valueOf(activeChar.getUptime()));
 					returnHtml = returnHtml.replaceAll("%onlinePlayers%", String.valueOf(World.getInstance().getPlayers().size()));
 				}
 				CommunityBoardHandler.separateAndSend(returnHtml, activeChar);
