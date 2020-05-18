@@ -1103,7 +1103,6 @@
             <weapon>
                 <type>ANCIENT_SWORD SWORD BLUNT SPEAR FIST DUAL_BLUNT DUAL</type>
             </weapon>
-            <check-range min="200"/>
         </conditions>
         <effects>
             <physical-attack>
@@ -2545,10 +2544,7 @@
             <mana initial="35"/>
         </consume>
         <target type="ENEMY"/>
-        <conditions>
-            <check-range min="100"/>
-        </conditions>
-        <effects>
+      <effects>
             <effect name="TeleportToTarget"/>
         </effects>
     </skill>

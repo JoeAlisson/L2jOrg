@@ -876,7 +876,9 @@
                     <value level="45">1972.0</value>
                 </power>
             </energy-attack>
-            <block-all-actions/>
+            <block-all-actions>
+                <allowed-skills>35016 35045</allowed-skills>
+            </block-all-actions>
         </effects>
     </skill>
     <skill id="7" name="Sonic Storm" max-level="31" action="A1">
@@ -2639,7 +2641,7 @@
                 <value level="3">55</value>
             </mana>
         </consume>
-        <target/>
+        <target type="TARGET"/>
         <effects>
             <dispel>
                 <abnormal type="POISON">
@@ -3465,7 +3467,32 @@
         </conditions>
         <effects>
             <physical-attack critical-chance="0.0" over-hit="true">
-                <power/>
+                <power initial="34">
+                    <value level="2">38</value>
+                    <value level="3">41</value>
+                    <value level="4">54</value>
+                    <value level="5">59</value>
+                    <value level="6">64</value>
+                    <value level="7">83</value>
+                    <value level="8">91</value>
+                    <value level="9">98</value>
+                    <value level="10">125</value>
+                    <value level="11">136</value>
+                    <value level="12">147</value>
+                    <value level="13">171</value>
+                    <value level="14">185</value>
+                    <value level="15">199</value>
+                    <value level="16">231</value>
+                    <value level="17">248</value>
+                    <value level="18">267</value>
+                    <value level="19">307</value>
+                    <value level="20">328</value>
+                    <value level="21">351</value>
+                    <value level="22">401</value>
+                    <value level="23">428</value>
+                    <value level="24">456</value>
+                </power>
+
             </physical-attack>
         </effects>
     </skill>

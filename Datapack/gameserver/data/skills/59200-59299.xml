@@ -3931,12 +3931,12 @@
             </speed>
             <trigger-skill-by-attack skill="59293" target="TARGET">
                 <power initial="1"/>
-                <chance initial="100"/>
+                <chance initial="25"/>
                 <min-damage initial="10"/>
             </trigger-skill-by-attack>
             <trigger-skill-by-magic skill="59293">
                 <power initial="1"/>
-                <chance initial="100"/>
+                <chance initial="25"/>
                 <types>MAGIC PHYSIC</types>
             </trigger-skill-by-magic>
         </effects>
@@ -3983,12 +3983,12 @@
             </stat-modify>
             <trigger-skill-by-attack skill="59294" target="TARGET">
                 <power initial="1"/>
-                <chance initial="100"/>
+                <chance initial="25"/>
                 <min-damage initial="10"/>
             </trigger-skill-by-attack>
             <trigger-skill-by-magic skill="59294">
                 <power initial="1"/>
-                <chance initial="100"/>
+                <chance initial="25"/>
                 <types>MAGIC PHYSIC</types>
             </trigger-skill-by-magic>
         </effects>
@@ -4044,12 +4044,12 @@
             </stat-modify>
             <trigger-skill-by-attack skill="59294" target="TARGET">
                 <power initial="2"/>
-                <chance initial="100"/>
+                <chance initial="25"/>
                 <min-damage initial="10"/>
             </trigger-skill-by-attack>
             <trigger-skill-by-magic skill="59294">
                 <power initial="2"/>
-                <chance initial="100"/>
+                <chance initial="25"/>
                 <types>MAGIC PHYSIC</types>
             </trigger-skill-by-magic>
         </effects>

@@ -161,7 +161,7 @@
 	
 	
 	<skill id="59723" name="VIP Level 8">
-        <!-- The right to VIP 7th level chest. XP/SP gain +30%%, item drop rate +250%%. Experience loss and chance to lose items upon death is decreased by 20%%. PvE/PvP damage is increased, STR/DEX/INT/WIT/MEN +2. World chat on any level, number of usage attempts +20. XP/SP gain +20%% during fishing. -->
+        <!-- The right to VIP 8th level chest. XP/SP gain +30%%, item drop rate +250%%. Experience loss and chance to lose items upon death is decreased by 20%%. PvE/PvP damage is increased, STR/DEX/INT/WIT/MEN +2. World chat on any level, number of usage attempts +20. XP/SP gain +20%% during fishing. -->
         <icon initial="BranchIcon.Icon.g_skill_vip8"/>
         <attributes property="MAGIC">
         </attributes>
@@ -238,7 +238,7 @@
     </skill>
 	
 	<skill id="59724" name="VIP Level 9">
-        <!-- The right to VIP 7th level chest. XP/SP gain +30%%, item drop rate +250%%. Experience loss and chance to lose items upon death is decreased by 20%%. PvE/PvP damage is increased, STR/DEX/INT/WIT/MEN +2. World chat on any level, number of usage attempts +20. XP/SP gain +20%% during fishing. -->
+        <!-- The right to VIP 9th level chest. XP/SP gain +30%%, item drop rate +250%%. Experience loss and chance to lose items upon death is decreased by 20%%. PvE/PvP damage is increased, STR/DEX/INT/WIT/MEN +2. World chat on any level, number of usage attempts +20. XP/SP gain +20%% during fishing. -->
         <icon initial="BranchIcon.Icon.g_skill_vip9"/>
         <attributes property="MAGIC">
         </attributes>
@@ -315,7 +315,7 @@
     </skill>
 	
 	<skill id="59725" name="VIP Level 10">
-        <!-- The right to VIP 7th level chest. XP/SP gain +30%%, item drop rate +250%%. Experience loss and chance to lose items upon death is decreased by 20%%. PvE/PvP damage is increased, STR/DEX/INT/WIT/MEN +2. World chat on any level, number of usage attempts +20. XP/SP gain +20%% during fishing. -->
+        <!-- The right to VIP 10th level chest. XP/SP gain +30%%, item drop rate +250%%. Experience loss and chance to lose items upon death is decreased by 20%%. PvE/PvP damage is increased, STR/DEX/INT/WIT/MEN +2. World chat on any level, number of usage attempts +20. XP/SP gain +20%% during fishing. -->
         <icon initial="BranchIcon.Icon.g_skill_vip10"/>
         <attributes property="MAGIC">
         </attributes>

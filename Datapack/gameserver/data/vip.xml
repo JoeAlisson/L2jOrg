@@ -42,6 +42,6 @@
     </vip>
 	
 	<vip tier="10" points-required="320000" points-depreciated="12000">
-        <bonus skill="59725" silver-coin-acquisition="250" rusty-coin-acquisition="300"/>
+        <bonus skill="59725" silver-coin-acquisition="250" rusty-coin-acquisition="350"/>
     </vip>
 </list>

@@ -489,6 +489,9 @@
 	<item id="93478" name="Lv. 60 Reward Box" type="NONE" icon="icon.bm_2019_cube_lv1">
 	<!-- Double-click to obtain +2 Aden Talisman, 500 L2 Coins, and Lv. 65 Reward Box.\n\nCan be used by characters level 60 or higher. -->
 		<restriction stackable="true" tradable="false" dropable="false" sellable="false" private-sellable="false" depositable="false"/>
+		<condition add-name="true" msg-id="113">
+			<player level-min="60"/>
+		</condition>
 		<attributes immediate-effect="true" action="PEEL"/>
 		<extract>
 			<item id="91663" min-count="500" max-count="500" chance="100"/>
@@ -501,7 +504,10 @@
 	<item id="93479" name="Lv. 65 Reward Box" type="NONE" icon="icon.bm_2019_cube_lv2">
 	<!-- Double-click to obtain +2 Cloak of Protection, 500 L2 Coins, and Lv. 70 Reward Box.\n\nCan be used by characters level 65 or higher. -->
 		<restriction stackable="true" tradable="false" dropable="false" sellable="false" private-sellable="false" depositable="false"/>
-<attributes immediate-effect="true" action="PEEL"/>
+		<condition add-name="true" msg-id="113">
+			<player level-min="65"/>
+		</condition>
+		<attributes immediate-effect="true" action="PEEL"/>
 		<extract>
 			<item id="91663" min-count="500" max-count="500" chance="100"/>
 			<item id="93301" min-count="1" max-count="1" chance="100"/>
@@ -513,6 +519,9 @@
 	<item id="93480" name="Lv. 70 Reward Box" type="NONE" icon="icon.bm_2019_cube_lv3">
 	<!-- Double-click to obtain +2 Dragon’s Belt, 1000 L2 Coins.\n\nCan be used by characters level 70 or higher. -->
 		<restriction stackable="true" tradable="false" dropable="false" sellable="false" private-sellable="false" depositable="false"/>
+		<condition add-name="true" msg-id="113">
+			<player level-min="70"/>
+		</condition>
 		<attributes immediate-effect="true" action="PEEL"/>
 		<extract>
 			<item id="91663" min-count="1000" max-count="1000" chance="100"/>
