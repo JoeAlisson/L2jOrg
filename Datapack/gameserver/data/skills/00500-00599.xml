@@ -3,7 +3,7 @@
     <skill id="501" name="Magic Break" max-level="5" debuff="true" action="A2">
         <!-- For 30 seconds, reduces enemy's M. Atk. by 23%. -->
         <icon initial="icon.iconskill30517"/>
-        <attributes property="PHYSIC" magic-critical-rate="5.0" level-bonus-rate="30" auto-use="ACTIVE">
+        <attributes property="PHYSIC" magic-critical-rate="5.0" level-bonus-rate="20" auto-use="ACTIVE">
             <magic-level initial="49">
                 <value level="2">52</value>
                 <value level="3">55</value>
@@ -30,18 +30,18 @@
             </mana>
         </consume>
         <target type="ENEMY_ONLY"/>
-        <abnormal type="PD_DOWN">
+        <abnormal type="MA_DOWN">
             <level initial="3"/>
             <time initial="30"/>
             <chance initial="80"/>
         </abnormal>
         <effects>
-            <magical-attack>
-                <power/>
-            </magical-attack>
+            <stat-modify mode="PER" stat="MAGIC_ATTACK">
+                <power initial="-23"/>
+            </stat-modify>
         </effects>
     </skill>
-    <skill id="503" name="Scorn" max-level="3" debuff="true" action="A1">
+    <skill id="503" name="Scorn" max-level="3" debuff="true" action="A2">
         <!--
             level 1: Provokes the enemies to the front with 11000 Power.
             level 2: Provokes the enemies to the front with 13000 Power.
@@ -53,7 +53,6 @@
                 <value level="2">55</value>
                 <value level="3">64</value>
             </magic-level>
-            <cast-range initial="-1"/>
             <reuse initial="4000"/>
             <cool-time initial="720"/>
             <effect-point initial="-13000">
@@ -62,7 +61,6 @@
             </effect-point>
             <effect-range initial="400"/>
             <hit-time initial="1080"/>
-            <activate-rate initial="-1"/>
         </attributes>
         <consume>
             <mana initial="50">
@@ -73,6 +71,10 @@
         <target type="ENEMY" scope="FAN" object="NOT_FRIEND" range="80" affect-min="5" affect-random="12">
             <fan-range start-angle="0" radius="80" angle="300"/>
         </target>
+        <abnormal type="TARGET_LOCK">
+            <time initial="3"/>
+            <chance initial="-1"/>
+        </abnormal>
     </skill>
     <skill id="522" name="Real Target" max-level="4" debuff="true" action="A2">
         <!--
@@ -139,7 +141,6 @@
         <icon initial="icon.skill0528"/>
         <attributes property="PHYSIC" magic-critical-rate="5.0" auto-use="ACTIVE">
             <magic-level initial="79"/>
-            <cast-range initial="-1"/>
             <reuse initial="900000"/>
             <effect-point initial="673"/>
             <effect-range initial="-1"/>
@@ -216,7 +217,6 @@
         <icon initial="icon.skill0536"/>
         <attributes property="PHYSIC" magic-critical-rate="5.0" auto-use="BUFF">
             <magic-level initial="78"/>
-            <cast-range initial="-1"/>
             <reuse initial="900000"/>
             <effect-point initial="673"/>
             <effect-range initial="-1"/>
@@ -360,7 +360,6 @@
                 <value level="3">66</value>
                 <value level="4">69</value>
             </magic-level>
-            <cast-range initial="-1"/>
             <reuse initial="15000"/>
             <effect-point initial="566">
                 <value level="2">590</value>
@@ -398,7 +397,6 @@
                 <value level="3">66</value>
                 <value level="4">69</value>
             </magic-level>
-            <cast-range initial="-1"/>
             <reuse initial="15000"/>
             <effect-point initial="566">
                 <value level="2">590</value>
@@ -480,7 +478,6 @@
                 <value level="3">66</value>
                 <value level="4">69</value>
             </magic-level>
-            <cast-range initial="-1"/>
             <reuse initial="15000"/>
             <effect-point initial="-566">
                 <value level="2">-590</value>
@@ -586,11 +583,6 @@
             <activate-rate initial="-1"/>
         </attributes>
         <consume>
-            <mana-init initial="16">
-                <value level="2">18</value>
-                <value level="3">20</value>
-                <value level="4">23</value>
-            </mana-init>
             <mana initial="80">
                 <value level="2">90</value>
                 <value level="3">100</value>
@@ -752,7 +744,6 @@
                 <value level="3">66</value>
                 <value level="4">69</value>
             </magic-level>
-            <cast-range initial="-1"/>
             <reuse initial="2000"/>
             <effect-point initial="-566">
                 <value level="2">-590</value>
@@ -763,10 +754,6 @@
             <hit-time initial="3000"/>
         </attributes>
         <consume>
-            <mana-init initial="5">
-                <value level="2">6</value>
-                <value level="4">7</value>
-            </mana-init>
             <mana initial="23">
                 <value level="2">27</value>
                 <value level="3">29</value>
@@ -844,7 +831,6 @@
                 <value level="3">66</value>
                 <value level="4">69</value>
             </magic-level>
-            <cast-range initial="-1"/>
             <reuse initial="15000"/>
             <effect-point initial="-566">
                 <value level="2">-590</value>
@@ -1025,7 +1011,6 @@
                 <value level="3">66</value>
                 <value level="4">69</value>
             </magic-level>
-            <cast-range initial="-1"/>
             <reuse initial="15000"/>
             <cool-time initial="720"/>
             <effect-point initial="-477">
@@ -1077,7 +1062,6 @@
                 <value level="3">66</value>
                 <value level="4">69</value>
             </magic-level>
-            <cast-range initial="-1"/>
             <reuse initial="135000"/>
             <effect-point initial="477">
                 <value level="2">532</value>
@@ -1123,7 +1107,7 @@
                 </power>
             </stat-modify>
             <resist-dispel-by-category category="BUFF">
-                <power initial="-80.0"/>
+                <power initial="80.0"/>
             </resist-dispel-by-category>
         </effects>
     </skill>
@@ -1179,7 +1163,6 @@
                 <value level="3">66</value>
                 <value level="4">69</value>
             </magic-level>
-            <cast-range initial="-1"/>
             <reuse initial="15000"/>
             <effect-point initial="-100"/>
             <effect-range initial="360"/>
@@ -1267,7 +1250,6 @@
                 <value level="3">66</value>
                 <value level="4">69</value>
             </magic-level>
-            <cast-range initial="-1"/>
             <reuse initial="4000"/>
             <effect-point initial="566">
                 <value level="2">590</value>
@@ -1294,7 +1276,7 @@
             <effect name="SilentMove"/>
             <trigger-skill-by-magic skill="7097" target="MY_PARTY">
                 <power initial="1.0"/>
-				<chance initial="100.0"/> 
+                <chance initial="100.0"/>
                 <types>PHYSIC MAGIC STATIC DANCE</types>
             </trigger-skill-by-magic>
             <trigger-skill-by-attack skill="7097" target="MY_PARTY">
@@ -1333,7 +1315,6 @@
         <icon initial="icon.skill_transform_buff"/>
         <attributes property="PHYSIC" magic-critical-rate="5.0">
             <magic-level initial="55"/>
-            <cast-range initial="-1"/>
             <reuse initial="30000"/>
             <effect-point initial="477"/>
             <effect-range initial="-1"/>
@@ -1364,7 +1345,6 @@
             <magic-level initial="59">
                 <value level="2">63</value>
             </magic-level>
-            <cast-range initial="-1"/>
             <reuse initial="4000"/>
             <effect-point initial="-100"/>
             <effect-range initial="-1"/>

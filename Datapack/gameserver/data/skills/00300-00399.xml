@@ -72,7 +72,6 @@
             <magic-level initial="66">
                 <value level="2">2</value>
             </magic-level>
-            <cast-range initial="-1"/>
             <reuse initial="3000"/>
             <effect-point initial="611">
                 <value level="2">615</value>
@@ -106,7 +105,6 @@
         <icon initial="icon.skill0305"/>
         <attributes property="PHYSIC" magic-critical-rate="5.0">
             <magic-level initial="74"/>
-            <cast-range initial="-1"/>
             <reuse initial="3000"/>
             <effect-point initial="655"/>
             <effect-range initial="-1"/>
@@ -118,7 +116,7 @@
         <target scope="PARTY" object="FRIEND" range="1000"/>
         <abnormal type="SONG_OF_VENGEANCE">
             <level initial="1"/>
-            <time initial="300"/>
+            <time initial="3600"/>
             <chance initial="-1"/>
         </abnormal>
         <effects>
@@ -132,7 +130,6 @@
         <icon initial="icon.skill0310"/>
         <attributes property="PHYSIC" magic-critical-rate="5.0">
             <magic-level initial="74"/>
-            <cast-range initial="-1"/>
             <reuse initial="3000"/>
             <effect-point initial="655"/>
             <effect-range initial="-1"/>
@@ -149,11 +146,11 @@
         </abnormal>
         <conditions>
             <weapon>
-                <type>DUAL DUAL_BLUNT</type>
+                <type>DUAL</type>
             </weapon>
         </conditions>
         <effects>
-            <vampiric-attack chance="30">
+            <vampiric-attack chance="80">
                 <power initial="8.0"/>
             </vampiric-attack>
         </effects>
@@ -168,7 +165,6 @@
             <magic-level initial="44">
                 <value level="2">66</value>
             </magic-level>
-            <cast-range initial="-1"/>
             <reuse initial="3000"/>
             <effect-point initial="611"/>
             <effect-range initial="-1"/>
@@ -189,7 +185,7 @@
         </abnormal>
         <conditions>
             <weapon>
-                <type>DUAL DUAL_BLUNT</type>
+                <type>DUAL</type>
             </weapon>
         </conditions>
         <effects>
@@ -246,7 +242,6 @@
                 <value level="19">72</value>
                 <value level="20">74</value>
             </magic-level>
-            <cast-range initial="-1"/>
             <effect-range initial="-1"/>
             <activate-rate initial="-1"/>
         </attributes>
@@ -330,7 +325,6 @@
                 <value level="8">74</value>
                 <value level="9">80</value>
             </magic-level>
-            <cast-range initial="-1"/>
             <reuse initial="30000"/>
             <effect-point initial="566">
                 <value level="2">582</value>
@@ -377,7 +371,7 @@
             </weapon>
         </conditions>
         <effects>
-            <effect name="BlockMove" stop-level="4"/>
+            <effect name="BlockMove" stop-level="2"/>
             <stat-modify stat="PHYSICAL_ATTACK" stat-add="PHYSICAL_ATTACK">
                 <power initial="124.0">
                     <value level="2">134.0</value>
@@ -407,16 +401,16 @@
                 </power>
                 <weapon-type>BOW</weapon-type>
             </stat-modify>
-            <stat-hp-based hp-percent="0" mode="PER" stat="CRITICAL_RATE">
+            <stat-modify mode="PER" stat="CRITICAL_RATE">
                 <power initial="20.0"/>
                 <weapon-type>BOW</weapon-type>
-            </stat-hp-based>
+            </stat-modify>
             <speed>
                 <power>
-                    <value level="3">-100.0</value>
-                    <value level="5">-80.0</value>
-                    <value level="7">-60.0</value>
-                    <value level="9">-40.0</value>
+                    <value level="3">-50</value>
+                    <value level="5">-40</value>
+                    <value level="7">-30</value>
+                    <value level="9">-20</value>
                 </power>
             </speed>
         </effects>
@@ -573,7 +567,6 @@
                 <value level="5">74</value>
                 <value level="6">76</value>
             </magic-level>
-            <cast-range initial="-1"/>
             <effect-range initial="-1"/>
             <hit-time initial="2000">
                 <value level="2">0</value>
@@ -581,6 +574,13 @@
             <activate-rate initial="-1"/>
         </attributes>
         <consume>
+            <mana-init initial="18">
+                <value level="2">22</value>
+                <value level="3">27</value>
+                <value level="4">31</value>
+                <value level="5">34</value>
+                <value level="6">37</value>
+            </mana-init>
             <mana initial="18">
                 <value level="2">22</value>
                 <value level="3">27</value>
@@ -630,7 +630,6 @@
                 <value level="5">72</value>
                 <value level="6">74</value>
             </magic-level>
-            <cast-range initial="-1"/>
             <effect-range initial="-1"/>
             <activate-rate initial="-1"/>
         </attributes>
@@ -665,17 +664,15 @@
         <icon initial="icon.skill0326"/>
         <attributes magic-critical-rate="5.0" hit-cancel-time="4.0">
             <magic-level initial="-1"/>
-            <cast-range initial="-1"/>
             <reuse initial="3600000"/>
             <effect-range initial="-1"/>
             <hit-time initial="4000"/>
             <activate-rate initial="-1"/>
         </attributes>
         <consume>
-            <mana-init initial="30"/>
             <mana initial="30"/>
             <item initial="2132"/>
-            <item-count initial="300"/>
+            <item-count initial="600"/>
         </consume>
         <target/>
         <conditions>
@@ -689,8 +686,7 @@
     <skill id="328" name="Dignity of Kamael">
         <!-- With the original power of Kamael, Speed +20, Atk. Spd. +20, Casting Spd. +20. -->
         <icon initial="icon.skill1923"/>
-        <attributes property="MAGIC" magic-critical-rate="5.0">
-        </attributes>
+        <attributes property="MAGIC" magic-critical-rate="5.0"/>
         <target/>
         <effects>
             <stat-modify stat="PHYSICAL_ATTACK_SPEED">
@@ -707,8 +703,7 @@
     <skill id="329" name="Pride of Kamael">
         <!-- With the original power of Kamael, Poison/Bleed/Hold/Sleep/Stun/Mental Attack Resistance +20. -->
         <icon initial="icon.skill1925"/>
-        <attributes property="MAGIC" magic-critical-rate="5.0">
-        </attributes>
+        <attributes property="MAGIC" magic-critical-rate="5.0"/>
         <target/>
         <effects>
             <defence-trait>
@@ -738,11 +733,11 @@
         <icon initial="icon.skill0335"/>
         <attributes magic-critical-rate="5.0">
             <magic-level initial="76"/>
-            <cast-range initial="-1"/>
             <effect-range initial="-1"/>
             <activate-rate initial="-1"/>
         </attributes>
         <consume>
+            <mana-init initial="35"/>
             <mana initial="35"/>
         </consume>
         <target type="NONE"/>
@@ -782,11 +777,11 @@
                 <value level="7">83</value>
                 <value level="8">84</value>
             </magic-level>
-            <cast-range initial="-1"/>
             <effect-range initial="-1"/>
             <activate-rate initial="-1"/>
         </attributes>
         <consume>
+            <mana-init initial="36"/>
             <mana initial="36"/>
         </consume>
         <target type="NONE"/>
@@ -805,7 +800,7 @@
                     <value level="8">20.0</value>
                 </power>
             </stat-modify>
-            <magic-cost type="MAGIC">
+            <magic-cost>
                 <power initial="5.0"/>
             </magic-cost>
         </effects>
@@ -820,7 +815,6 @@
             <effect-point initial="810"/>
             <effect-range initial="400"/>
             <hit-time initial="1800"/>
-
             <element type="HOLY" value="20"/>
         </attributes>
         <consume>
@@ -843,10 +837,10 @@
                 <power initial="10.0"/>
             </stat-modify>
             <resist-dispel-by-category category="BUFF">
-                <power initial="-40.0"/>
+                <power initial="40.0"/>
             </resist-dispel-by-category>
             <resist-abnormal-by-category category="DEBUFF">
-                <power initial="-10.0"/>
+                <power initial="10"/>
             </resist-abnormal-by-category>
         </effects>
     </skill>
@@ -860,12 +854,13 @@
             <effect-point initial="-1338"/>
             <effect-range initial="400"/>
             <hit-time initial="1800"/>
+            <element type="DARK" value="20"/>
         </attributes>
         <consume>
             <hp initial="669"/>
         </consume>
         <target type="ENEMY_ONLY"/>
-        <abnormal type="TOUCH_OF_DEATH">
+        <abnormal type="TOUCH_OF_DEATH" visual="REVENGE_AURA">
             <level initial="1"/>
             <time initial="120"/>
             <chance initial="80"/>
@@ -881,7 +876,7 @@
                 <power initial="-10.0"/>
             </stat-modify>
             <resist-abnormal-by-category category="DEBUFF">
-                <power initial="10.0"/>
+                <power initial="-10.0"/>
             </resist-abnormal-by-category>
             <cp mode="PER">
                 <power initial="-50.0"/>
@@ -948,7 +943,7 @@
             </weapon>
         </conditions>
         <effects>
-            <physical-attack critical-chance="15.0" over-hit="true">
+            <physical-attack critical-chance="15.0" defense-mod="0.8" over-hit="true">
                 <power initial="6503.0">
                     <value level="2">6698.0</value>
                     <value level="3">6898.0</value>
@@ -960,10 +955,6 @@
                     <value level="9">8233.0</value>
                 </power>
             </physical-attack>
-            <lethal>
-                <power/>
-                <half-power initial="10.0"/>
-            </lethal>
         </effects>
     </skill>
     <skill id="344" name="Lethal Blow" max-level="2" action="A1">
@@ -1003,10 +994,6 @@
                     <value level="2">8577.0</value>
                 </power>
             </fatal-blow>
-            <lethal>
-                <power/>
-                <half-power initial="15.0"/>
-            </lethal>
         </effects>
     </skill>
     <skill id="345" name="Sonic Rage" max-level="5" debuff="true" action="A2">
@@ -1052,7 +1039,7 @@
         </abnormal>
         <conditions>
             <weapon>
-                <type>SWORD BLUNT SPEAR FIST DUAL</type>
+                <type>SWORD TWO_HAND_SWORD MAGIC_SWORD BLUNT HAMMER ROD STAFF DUAL</type>
             </weapon>
         </conditions>
         <effects>
@@ -1081,7 +1068,7 @@
             level 5: Hurls a Wind Of Force to attack the target with 235 P. Atk damage. P. Def. -30%% and absorbs Momentum. Requires Fist Weapon.
          -->
         <icon initial="icon.skill0346"/>
-        <attributes property="PHYSIC" next-action="ATTACK" magic-critical-rate="5.0" auto-use="ACTIVE">
+        <attributes property="PHYSIC" next-action="ATTACK" magic-critical-rate="5.0" level-bonus-rate="30" auto-use="ACTIVE">
             <magic-level initial="76">
                 <value level="2">78</value>
                 <value level="3">80</value>
@@ -1098,7 +1085,6 @@
             </effect-point>
             <effect-range initial="1100"/>
             <hit-time initial="1200"/>
-            <activate-rate initial="-1"/>
         </attributes>
         <consume>
             <mana initial="50">
@@ -1109,9 +1095,13 @@
             </mana>
         </consume>
         <target type="ENEMY"/>
+        <abnormal type="PD_DOWN">
+            <time initial="20"/>
+            <chance initial="80"/>
+        </abnormal>
         <conditions>
             <weapon>
-                <type>SWORD BLUNT SPEAR FIST DUAL</type>
+                <type>FIST</type>
             </weapon>
         </conditions>
         <effects>
@@ -1155,7 +1145,6 @@
                 <value level="8">83</value>
                 <value level="9">84</value>
             </magic-level>
-            <cast-range initial="-1"/>
             <reuse initial="8000"/>
             <cool-time initial="500"/>
             <effect-point initial="-340">
@@ -1272,7 +1261,7 @@
         <target type="ENEMY"/>
         <conditions>
             <weapon>
-                <type>SWORD BLUNT</type>
+                <type>SWORD TWO_HAND_SWORD MAGIC_SWORD BLUNT HAMMER ROD STAFF SPEAR</type>
             </weapon>
         </conditions>
         <effects>
@@ -1292,7 +1281,6 @@
             <magic-level initial="77">
                 <value level="2">84</value>
             </magic-level>
-            <cast-range initial="-1"/>
             <reuse initial="3000"/>
             <effect-point initial="666">
                 <value level="2">670</value>
@@ -1314,7 +1302,7 @@
             <chance initial="-1"/>
         </abnormal>
         <effects>
-            <magic-cost type="MAGIC">
+            <magic-cost>
                 <power initial="-5.0">
                     <value level="2">-10.0</value>
                 </power>
@@ -1405,9 +1393,11 @@
                     <value level="10">4004.0</value>
                 </power>
             </physical-attack>
-            <block-all-actions/>
+            <block-all-actions>
+                <allowed-skills>35016 35045</allowed-skills>
+            </block-all-actions>
             <effect name="TargetCancel">
-                <power initial="50.0"/>
+                <power initial="80"/>
             </effect>
         </effects>
     </skill>
@@ -1480,7 +1470,6 @@
         <icon initial="icon.skill0355"/>
         <attributes property="PHYSIC" magic-critical-rate="5.0" auto-use="BUFF">
             <magic-level initial="78"/>
-            <cast-range initial="-1"/>
             <reuse initial="30000"/>
             <effect-point initial="669"/>
             <effect-range initial="-1"/>
@@ -1517,7 +1506,6 @@
         <icon initial="icon.skill0356"/>
         <attributes property="PHYSIC" magic-critical-rate="5.0" auto-use="BUFF">
             <magic-level initial="78"/>
-            <cast-range initial="-1"/>
             <reuse initial="30000"/>
             <effect-point initial="669"/>
             <effect-range initial="-1"/>
@@ -1541,6 +1529,15 @@
             <stat-position-based position="FRONT" stat="CRITICAL_RATE">
                 <power initial="-30.0"/>
             </stat-position-based>
+            <stat-position-based position="BACK" stat="CRITICAL_RATE">
+                <power initial="60"/>
+            </stat-position-based>
+            <stat-position-based position="SIDE" stat="CRITICAL_RATE">
+                <power initial="30.0"/>
+            </stat-position-based>
+            <stat-modify mode="PER" stat="BLOW_RATE">
+                <power initial="20"/>
+            </stat-modify>
         </effects>
     </skill>
     <skill id="357" name="Focus Power" action="A2">
@@ -1548,7 +1545,6 @@
         <icon initial="icon.skill0357"/>
         <attributes property="PHYSIC" magic-critical-rate="5.0" auto-use="BUFF">
             <magic-level initial="78"/>
-            <cast-range initial="-1"/>
             <reuse initial="30000"/>
             <effect-point initial="669"/>
             <effect-range initial="-1"/>
@@ -1590,7 +1586,16 @@
             </magic-level>
             <cast-range initial="40"/>
             <reuse initial="8000"/>
-            <effect-point initial="-1"/>
+            <effect-point initial="-760">
+                <value level="2">-770</value>
+                <value level="3">-780</value>
+                <value level="4">-790</value>
+                <value level="5">-800</value>
+                <value level="6">-810</value>
+                <value level="7">-820</value>
+                <value level="8">-830</value>
+                <value level="9">-840</value>
+            </effect-point>
             <effect-range initial="400"/>
             <hit-time initial="1000"/>
         </attributes>
@@ -1614,7 +1619,7 @@
         </abnormal>
         <conditions>
             <weapon>
-                <type>DAGGER DUAL_DAGGER</type>
+                <type>DAGGER</type>
             </weapon>
         </conditions>
         <effects>
@@ -1627,7 +1632,9 @@
             <effect name="DeleteHateOfMe">
                 <power initial="80.0"/>
             </effect>
-            <block-all-actions/>
+            <block-all-actions>
+                <allowed-skills>35016 35045</allowed-skills>
+            </block-all-actions>
         </effects>
     </skill>
     <skill id="361" name="Stun Blast" max-level="3" debuff="true" action="A2">
@@ -1750,7 +1757,7 @@
         </abnormal>
         <conditions>
             <weapon>
-                <type>SWORD BLUNT SPEAR TWO_HAND_SWORD DUAL_BLUNT</type>
+                <type>SWORD TWO_HAND_SWORD MAGIC_SWORD BLUNT HAMMER ROD STAFF SPEAR</type>
             </weapon>
         </conditions>
         <effects>
@@ -1765,7 +1772,9 @@
                     <value level="8">3539.0</value>
                 </power>
             </physical-attack>
-            <block-all-actions/>
+            <block-all-actions>
+                <allowed-skills>35016 35045</allowed-skills>
+            </block-all-actions>
             <stat-modify mode="PER" stat="MAGICAL_DEFENCE" stat-add="MAGICAL_DEFENCE">
                 <power initial="-30.0"/>
             </stat-modify>
@@ -1776,7 +1785,6 @@
         <icon initial="icon.skill0364"/>
         <attributes property="PHYSIC" magic-critical-rate="5.0">
             <magic-level initial="78"/>
-            <cast-range initial="-1"/>
             <reuse initial="3000"/>
             <effect-point initial="669"/>
             <effect-range initial="-1"/>
@@ -1810,7 +1818,6 @@
             <magic-level initial="78">
                 <value level="2">83</value>
             </magic-level>
-            <cast-range initial="-1"/>
             <reuse initial="3000"/>
             <effect-point initial="669">
                 <value level="2">675</value>
@@ -1856,7 +1863,6 @@
                 <value level="2">81</value>
                 <value level="3">84</value>
             </magic-level>
-            <cast-range initial="-1"/>
             <reuse initial="3000"/>
             <effect-point initial="666">
                 <value level="2">674</value>
@@ -1889,7 +1895,7 @@
             <effect name="SilentMove"/>
             <trigger-skill-by-magic skill="7097" target="MY_PARTY">
                 <power initial="1.0"/>
-				<chance initial="100.0"/>                                     
+                <chance initial="100.0"/>
                 <types>PHYSIC MAGIC STATIC DANCE</types>
             </trigger-skill-by-magic>
             <trigger-skill-by-attack skill="7097" target="MY_PARTY">
@@ -1914,7 +1920,6 @@
                 <value level="2">81</value>
                 <value level="3">83</value>
             </magic-level>
-            <cast-range initial="-1"/>
             <reuse initial="120000"/>
             <cool-time initial="500"/>
             <effect-point initial="-666">
@@ -1927,6 +1932,10 @@
             <element type="EARTH" value="20"/>
         </attributes>
         <consume>
+            <mana-init initial="8">
+                <value level="2">10</value>
+                <value level="3">15</value>
+            </mana-init>
             <mana initial="43">
                 <value level="2">50</value>
                 <value level="3">75</value>
@@ -1948,7 +1957,7 @@
         </conditions>
         <effects>
             <block-all-actions>
-                <allowed-skills>35016</allowed-skills>
+                <allowed-skills>35016 35045</allowed-skills>
             </block-all-actions>
             <damage-block block-hp="true"/>
             <effect name="BuffBlock"/>
@@ -1956,11 +1965,6 @@
             <stat-modify mode="PER" stat="REGENERATE_HP_RATE" stat-add="REGENERATE_HP_RATE">
                 <power initial="-100.0"/>
             </stat-modify>
-            <defence-trait>
-                <trait type="TURN_STONE">
-                    <power initial="100.0"/>
-                </trait>
-            </defence-trait>
         </effects>
     </skill>
     <skill id="368" name="Vengeance" action="A3">
@@ -1968,7 +1972,6 @@
         <icon initial="icon.skill0368"/>
         <attributes property="PHYSIC" magic-critical-rate="5.0">
             <magic-level initial="77"/>
-            <cast-range initial="-1"/>
             <reuse initial="900000"/>
             <effect-point initial="-8784"/>
             <effect-range initial="-1"/>
@@ -2000,7 +2003,7 @@
                 <power initial="5400.0"/>
             </stat-modify>
             <resist-dispel-by-category category="BUFF" scope="SELF">
-                <power initial="-80.0"/>
+                <power initial="50.0"/>
             </resist-dispel-by-category>
             <speed mode="PER" scope="SELF">
                 <power initial="-40.0"/>
@@ -2470,7 +2473,7 @@
         </effects>
     </skill>
     <skill id="390" name="Clan Luck">
-        <!-- When killed by a monster, item dos not drop. Does not apply to chaotic characters. -->
+        <!-- Item does not drop when killed by a regular/boss monster. -->
         <icon initial="icon.skill1510"/>
         <attributes property="MAGIC" magic-critical-rate="5.0">
         </attributes>
@@ -2495,27 +2498,27 @@
             level 2: Clan member's XP gain +6%.
             level 3: Clan member's XP gain +10%.
             level 4: Clan member's XP gain +15%.
-            level 5: Clan member's XP gain +25%.
+            level 5: Clan member's XP gain +5%.
          -->
         <icon initial="icon.skill0390"/>
         <attributes property="MAGIC" magic-critical-rate="5.0"/>
         <target/>
-         <abnormal type="EXP_SP_A">
-			 <level initial="1">
-                 <value level="2">2</value>
-                 <value level="3">3</value>
-                 <value level="4">4</value>
-                 <value level="5">5</value>
-             </level>
-             <time initial="-1"/>
-         </abnormal>
+        <abnormal type="EXP_SP_A">
+            <level initial="1">
+                <value level="2">2</value>
+                <value level="3">3</value>
+                <value level="4">4</value>
+                <value level="5">5</value>
+            </level>
+            <time initial="-1"/>
+        </abnormal>
         <effects>
             <stat-modify mode="PER" stat="BONUS_EXP">
                 <power initial="3.0">
                     <value level="2">6.0</value>
                     <value level="3">10.0</value>
                     <value level="4">15.0</value>
-                    <value level="5">25.0</value>
+                    <value level="5">5.0</value>
                 </power>
             </stat-modify>
         </effects>
@@ -2524,12 +2527,8 @@
         <!-- Obtain 2 Shine Souls. -->
         <icon initial="icon.skill55474"/>
         <attributes magic-critical-rate="5.0" auto-use="ACTIVE">
-            <magic-level initial="1"/>
-            <cast-range initial="-1"/>
             <reuse initial="2000"/>
-            <effect-range initial="-1"/>
             <hit-time initial="500"/>
-            <activate-rate initial="-1"/>
         </attributes>
         <consume>
             <hp initial="30"/>
@@ -2545,12 +2544,8 @@
         <!-- Obtain 2 Shadow Souls. -->
         <icon initial="icon.skill55475"/>
         <attributes magic-critical-rate="5.0" auto-use="ACTIVE">
-            <magic-level initial="1"/>
-            <cast-range initial="-1"/>
             <reuse initial="2000"/>
-            <effect-range initial="-1"/>
             <hit-time initial="500"/>
-            <activate-rate initial="-1"/>
         </attributes>
         <consume>
             <hp initial="30"/>
@@ -2567,7 +2562,6 @@
         <icon initial="icon.skill0395"/>
         <attributes property="PHYSIC" static-reuse="true" magic-critical-rate="5.0" blocked-on-olympiad="true">
             <magic-level initial="-1"/>
-            <cast-range initial="-1"/>
             <reuse initial="3600000"/>
             <effect-point initial="676"/>
             <effect-range initial="-1"/>
@@ -2575,11 +2569,11 @@
         </attributes>
         <consume>
             <mana initial="72"/>
-            <item initial="3031"/>
+            <item initial="1785"/>
             <item-count initial="40"/>
         </consume>
         <target/>
-        <abnormal type="HERO_BUFF">
+        <abnormal type="HERO_BUFF" visual="ULTIMATE_DEFENCE">
             <level initial="3"/>
             <time initial="30"/>
             <chance initial="-1"/>
@@ -2592,7 +2586,7 @@
                 <power initial="4050.0"/>
             </stat-modify>
             <resist-dispel-by-category category="BUFF">
-                <power initial="-80.0"/>
+                <power initial="80.0"/>
             </resist-dispel-by-category>
             <speed>
                 <power initial="5.0"/>
@@ -2604,7 +2598,6 @@
         <icon initial="icon.skill0396"/>
         <attributes property="PHYSIC" static-reuse="true" magic-critical-rate="5.0" blocked-on-olympiad="true">
             <magic-level initial="-1"/>
-            <cast-range initial="-1"/>
             <reuse initial="3600000"/>
             <effect-point initial="676"/>
             <effect-range initial="-1"/>
@@ -2612,11 +2605,11 @@
         </attributes>
         <consume>
             <mana initial="72"/>
-            <item initial="3031"/>
+            <item initial="1785"/>
             <item-count initial="40"/>
         </consume>
         <target/>
-        <abnormal type="HERO_BUFF">
+        <abnormal type="HERO_BUFF" visual="AURA_DEBUFF">
             <level initial="2"/>
             <time initial="120"/>
             <chance initial="-1"/>
@@ -2641,7 +2634,7 @@
                 <power initial="20.0"/>
             </speed>
             <resist-dispel-by-category category="BUFF">
-                <power initial="-80.0"/>
+                <power initial="80.0"/>
             </resist-dispel-by-category>
             <stat-modify mode="PER" stat="HEAL_RECEIVE">
                 <power initial="100.0"/>
@@ -2664,9 +2657,8 @@
             level 2: Enough Shine Souls have been gathered to be in the Shine Side state. \n\n<Acceleration Stage 2>\nP. Atk. +280, Atk. Spd. +80, Casting Spd. +120, Speed +15, P. Skill Critical Damage +200, M. Skill Critical Damage +200.\n\nP./M. Def. +10%%.\n\nHas a chance to recover MP when attacking.\n\nHP and MP are recovered continuously.
          -->
         <icon initial="icon.skill_kamael_shineside"/>
-        <attributes property="PHYSIC" magic-critical-rate="5.0">
+        <attributes property="PHYSIC" magic-critical-rate="5.0" triggered="true">
             <magic-level initial="1"/>
-            <cast-range initial="-1"/>
             <effect-range initial="-1"/>
         </attributes>
         <target/>
@@ -2730,9 +2722,8 @@
             level 2: Enough Shadow Souls have been gathered to be in the Shadow Side state. \n\n<Acceleration Stage 3>\nP. Atk. +500, Atk. Spd. +200, Casting Spd. +250, Speed +20, P. Skill Critical Damage +200, M. Skill Critical Damage +200.\n\nHas a chance to activate powerful attack skills.\n\nCan use Jin skills.
          -->
         <icon initial="icon.skill_kamael_shadowside"/>
-        <attributes property="PHYSIC" magic-critical-rate="5.0">
+        <attributes property="PHYSIC" magic-critical-rate="5.0" triggered="true">
             <magic-level initial="1"/>
-            <cast-range initial="-1"/>
             <effect-range initial="-1"/>
         </attributes>
         <target/>
