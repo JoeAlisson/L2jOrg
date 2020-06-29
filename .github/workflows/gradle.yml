@@ -24,8 +24,10 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
-      run: ./gradlew build
+      run: |
+        ./gradlew build --warning-mode all
+        ls -lah
     - uses: actions/upload-artifact@v2
       with:
         name: L2jOrg-compilated
-        path: build/distribution/L2j*.zip
+        path: build/distribution/*.zip
