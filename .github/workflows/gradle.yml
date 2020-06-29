@@ -26,8 +26,9 @@ jobs:
     - name: Build with Gradle
       run: |
         ./gradlew build --warning-mode all
-        ls -lah
+        ls -lah build
+        ls -lah build/distributions
     - uses: actions/upload-artifact@v2
       with:
         name: L2jOrg-compilated
-        path: build/distribution/*.zip
+        path: build/**/*.zip
