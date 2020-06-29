@@ -26,9 +26,7 @@ jobs:
     - name: Build with Gradle
       run: |
         ./gradlew build --warning-mode all
-        ls -lah build
-        ls -lah build/distributions
     - uses: actions/upload-artifact@v2
       with:
-        name: L2jOrg-compilated
+        name: L2jOrg-${CI_COMMIT_REF_SLUG}
         path: build/**/*.zip
