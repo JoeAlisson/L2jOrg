@@ -405,7 +405,7 @@
             <chance initial="-1"/>
         </abnormal>
         <effects>
-            <effect name="ManaHeal" ticks="10">
+            <effect name="ManaHealOverTime" ticks="10">
                 <power initial="300.0"/>
             </effect>
         </effects>
