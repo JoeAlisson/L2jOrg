@@ -7,11 +7,18 @@
             <cast-range initial="400"/>
             <reuse initial="3600000"/>
             <effect-point initial="1"/>
-            <effect-range initial="-1"/>
+            <effect-range initial="800"/>
             <hit-time initial="3000"/>
-            <activate-rate initial="-1"/>
         </attributes>
-        <target/>
+        <target type="TARGET"/>
+		<abnormal type="PRESERVE_ABNORMAL">
+            <level initial="1"/>
+            <time initial="3600"/>
+            <chance initial="-1"/>
+        </abnormal>
+        <effects>
+            <effect name="NoblesseBless"/>
+        </effects>
     </skill>
     <skill id="35001" name="Fire Dragon's Protection" action="A1">
         <!-- Fully restores a dying character. Buff/ debuff effects remain after death, but Blessing of Fire Dragon is consumed. -->
@@ -20,11 +27,20 @@
             <cast-range initial="400"/>
             <reuse initial="3600000"/>
             <effect-point initial="1"/>
-            <effect-range initial="-1"/>
+            <effect-range initial="800"/>
             <hit-time initial="3000"/>
-            <activate-rate initial="-1"/>
         </attributes>
-        <target/>
+        <target type="TARGET"/>
+		<abnormal type="RESURRECTION_SPECIAL">
+            <level initial="2"/>
+            <time initial="3600"/>
+            <chance initial="-1"/>
+        </abnormal>
+        <effects>
+            <effect name="ResurrectionSpecial">
+                <power initial="100.0"/>
+            </effect>
+        </effects>
     </skill>
     <skill id="35002" name="Earth Dragon Breath" debuff="true" action="A1">
         <!-- For 15 seconds, Atk. Spd. is decreased by 50%% and Casting Spd. is decreased by 50%%. -->
@@ -47,9 +63,24 @@
             <effect-point initial="438"/>
             <effect-range initial="-1"/>
             <hit-time initial="1000"/>
-            <activate-rate initial="-1"/>
         </attributes>
         <target/>
+		<abnormal type="HERO_BUFF" visual="ULTIMATE_DEFENCE">
+            <level initial="3"/>
+            <time initial="15"/>
+            <chance initial="-1"/>
+        </abnormal>
+        <effects>
+            <stat-modify stat="PHYSICAL_DEFENCE" stat-add="PHYSICAL_DEFENCE">
+                <power initial="3600.0"/>
+            </stat-modify>
+            <stat-modify stat="MAGICAL_DEFENCE">
+                <power initial="3240.0"/>
+            </stat-modify>
+            <resist-dispel-by-category category="BUFF">
+                <power initial="80.0"/>
+            </resist-dispel-by-category>            
+        </effects>
     </skill>
     <skill id="35004" name="Earth Dragon Pendant">
         <!-- M. Def. +9. -->
@@ -57,6 +88,11 @@
         <attributes property="MAGIC">
         </attributes>
         <target/>
+		<effects>
+            <stat-modify stat="MAGICAL_DEFENCE" stat-add="MAGICAL_DEFENCE">
+                <power initial="9.0"/>
+            </stat-modify>
+        </effects>
     </skill>
     <skill id="35005" name="Earth Dragon Pendant +1" max-level="11">
         <!--
@@ -128,7 +164,7 @@
                     <value level="10">21.0</value>
                     <value level="10">60.0</value>
                     <value level="11">21.0</value>
-                    <value level="11">60.0</value>
+                    <value level="11">24.0</value>
                 </power>
             </stat-modify>
             <stat-modify stat="BONUS_EXP">
