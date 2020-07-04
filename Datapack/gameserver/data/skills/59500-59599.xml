@@ -618,13 +618,13 @@
                     <value level="5">12.0</value>                   
                 </power>
             </stat-modify>
-			<stat-modify stat="BONUS_EXP">
+			<stat-modify mode="PER" stat="BONUS_EXP">
                 <power>
                     <value level="3">5.0</value>
                     <value level="5">10.0</value>
                 </power>
             </stat-modify>
-            <stat-modify stat="BONUS_SP">
+            <stat-modify mode="PER" stat="BONUS_SP">
                 <power>
                     <value level="3">5.0</value>
                     <value level="5">10.0</value>
@@ -672,10 +672,10 @@
             <stat-modify stat="MAGICAL_DEFENCE" stat-add="MAGICAL_DEFENCE">
                 <power initial="15.0"/>                 
             </stat-modify>
-			<stat-modify stat="BONUS_EXP">
+			<stat-modify mode="PER" stat="BONUS_EXP">
                <power initial="10.0"/>
             </stat-modify>
-            <stat-modify stat="BONUS_SP">
+            <stat-modify mode="PER" stat="BONUS_SP">
                 <power initial="10.0"/>
             </stat-modify>
 			<stat-modify mode="PER" stat="PVP_MAGICAL_SKILL_DEFENCE">
@@ -737,7 +737,7 @@
                     <value level="5">21.0</value>                   
                 </power>
             </stat-modify>
-			<stat-modify stat="BONUS_EXP">
+			<stat-modify mode="PER" stat="BONUS_EXP">
                 <power initial="11.0">
                     <value level="2">13.0</value>
                     <value level="3">13.0</value>
@@ -745,7 +745,7 @@
                     <value level="5">20.0</value>                   
                 </power>
             </stat-modify>
-            <stat-modify stat="BONUS_SP">
+            <stat-modify mode="PER" stat="BONUS_SP">
                 <power initial="11.0">
                     <value level="2">13.0</value>
                     <value level="3">13.0</value>
@@ -816,10 +816,10 @@
             <stat-modify stat="MAGICAL_DEFENCE" stat-add="MAGICAL_DEFENCE">
                 <power initial="25.0"/>                 
             </stat-modify>
-			<stat-modify stat="BONUS_EXP">
+			<stat-modify mode="PER" stat="BONUS_EXP">
                <power initial="30.0"/>
             </stat-modify>
-            <stat-modify stat="BONUS_SP">
+            <stat-modify mode="PER" stat="BONUS_SP">
                 <power initial="30.0"/>
             </stat-modify>
 			<stat-modify mode="PER" stat="PVP_MAGICAL_SKILL_DEFENCE">
@@ -897,10 +897,10 @@
                     <value level="5">27.0</value>                   
                 </power>
             </stat-modify>
-			<stat-modify stat="BONUS_EXP">
+			<stat-modify mode="PER" stat="BONUS_EXP">
                 <power initial="30.0"/>               
             </stat-modify>
-            <stat-modify stat="BONUS_SP">
+            <stat-modify mode="PER" stat="BONUS_SP">
                 <power initial="30.0"/>
             </stat-modify>
 			<stat-modify mode="PER" stat="PVP_MAGICAL_SKILL_DEFENCE">
@@ -975,10 +975,10 @@
             <stat-modify stat="MAGICAL_DEFENCE" stat-add="MAGICAL_DEFENCE">
                 <power initial="30.0"/>                 
             </stat-modify>
-			<stat-modify stat="BONUS_EXP">
+			<stat-modify mode="PER" stat="BONUS_EXP">
                <power initial="40.0"/>
             </stat-modify>
-            <stat-modify stat="BONUS_SP">
+            <stat-modify mode="PER" stat="BONUS_SP">
                 <power initial="40.0"/>
             </stat-modify>
 			<stat-modify mode="PER" stat="PVP_MAGICAL_SKILL_DEFENCE">
@@ -1066,12 +1066,12 @@
                     <value level="5">45.0</value>                   
                 </power>
             </stat-modify>
-			<stat-modify stat="BONUS_EXP">
+			<stat-modify mode="PER" stat="BONUS_EXP">
                 <power initial="40.0">
                     <value level="5">50.0</value>                   
                 </power>               
             </stat-modify>
-            <stat-modify stat="BONUS_SP">
+            <stat-modify mode="PER" stat="BONUS_SP">
                 <power initial="40.0">
                     <value level="5">50.0</value>                   
                 </power> 
@@ -1147,13 +1147,13 @@
                     <value level="5">12.0</value>                   
                 </power>
             </stat-modify>
-			<stat-modify stat="BONUS_EXP">
+			<stat-modify mode="PER" stat="BONUS_EXP">
                 <power>
                     <value level="3">5.0</value>
                     <value level="5">10.0</value>
                 </power>
             </stat-modify>
-            <stat-modify stat="BONUS_SP">
+            <stat-modify mode="PER" stat="BONUS_SP">
                 <power>
                     <value level="3">5.0</value>
                     <value level="5">10.0</value>
@@ -1201,10 +1201,10 @@
             <stat-modify stat="MAGICAL_DEFENCE" stat-add="MAGICAL_DEFENCE">
                 <power initial="15.0"/>                 
             </stat-modify>
-			<stat-modify stat="BONUS_EXP">
+			<stat-modify mode="PER" stat="BONUS_EXP">
                <power initial="10.0"/>
             </stat-modify>
-            <stat-modify stat="BONUS_SP">
+            <stat-modify mode="PER" stat="BONUS_SP">
                 <power initial="10.0"/>
             </stat-modify>
 			<stat-modify mode="PER" stat="PVP_MAGICAL_SKILL_DEFENCE">
@@ -1266,7 +1266,7 @@
                     <value level="5">21.0</value>                   
                 </power>
             </stat-modify>
-			<stat-modify stat="BONUS_EXP">
+			<stat-modify mode="PER" stat="BONUS_EXP">
                 <power initial="11.0">
                     <value level="2">13.0</value>
                     <value level="3">13.0</value>
@@ -1274,7 +1274,7 @@
                     <value level="5">20.0</value>                   
                 </power>
             </stat-modify>
-            <stat-modify stat="BONUS_SP">
+            <stat-modify mode="PER" stat="BONUS_SP">
                 <power initial="11.0">
                     <value level="2">13.0</value>
                     <value level="3">13.0</value>
@@ -1345,10 +1345,10 @@
             <stat-modify stat="MAGICAL_DEFENCE" stat-add="MAGICAL_DEFENCE">
                 <power initial="25.0"/>                 
             </stat-modify>
-			<stat-modify stat="BONUS_EXP">
+			<stat-modify mode="PER" stat="BONUS_EXP">
                <power initial="30.0"/>
             </stat-modify>
-            <stat-modify stat="BONUS_SP">
+            <stat-modify mode="PER" stat="BONUS_SP">
                 <power initial="30.0"/>
             </stat-modify>
 			<stat-modify mode="PER" stat="PVP_MAGICAL_SKILL_DEFENCE">
@@ -1426,10 +1426,10 @@
                     <value level="5">27.0</value>                   
                 </power>
             </stat-modify>
-			<stat-modify stat="BONUS_EXP">
+			<stat-modify mode="PER" stat="BONUS_EXP">
                 <power initial="30.0"/>               
             </stat-modify>
-            <stat-modify stat="BONUS_SP">
+            <stat-modify mode="PER" stat="BONUS_SP">
                 <power initial="30.0"/>
             </stat-modify>
 			<stat-modify mode="PER" stat="PVP_MAGICAL_SKILL_DEFENCE">
@@ -1504,10 +1504,10 @@
             <stat-modify stat="MAGICAL_DEFENCE" stat-add="MAGICAL_DEFENCE">
                 <power initial="30.0"/>                 
             </stat-modify>
-			<stat-modify stat="BONUS_EXP">
+			<stat-modify mode="PER" stat="BONUS_EXP">
                <power initial="40.0"/>
             </stat-modify>
-            <stat-modify stat="BONUS_SP">
+            <stat-modify mode="PER" stat="BONUS_SP">
                 <power initial="40.0"/>
             </stat-modify>
 			<stat-modify mode="PER" stat="PVP_MAGICAL_SKILL_DEFENCE">
@@ -1595,12 +1595,12 @@
                     <value level="5">45.0</value>                   
                 </power>
             </stat-modify>
-			<stat-modify stat="BONUS_EXP">
+			<stat-modify mode="PER" stat="BONUS_EXP">
                 <power initial="40.0">
                     <value level="5">50.0</value>                   
                 </power>               
             </stat-modify>
-            <stat-modify stat="BONUS_SP">
+            <stat-modify mode="PER" stat="BONUS_SP">
                 <power initial="40.0">
                     <value level="5">50.0</value>                   
                 </power> 

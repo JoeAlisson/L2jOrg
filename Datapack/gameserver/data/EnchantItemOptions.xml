@@ -949,14 +949,6 @@
 		<options level="10" option1="60219" />
 	</item>
 	
-	<!-- Talisman -->
-	<item id="49683"> <!-- Talisman_of_Baium -->
-		<options level="1" option1="33399" />
-		<options level="2" option1="33400" />
-		<options level="3" option1="33401" />
-		<options level="4" option1="33402" />
-		<options level="5" option1="33403" />
-	</item>
 	<item id="91745"> <!-- Talisman of Aden -->
 		<options level="0" option1="33338"  />
 		<options level="1" option1="33339" />
@@ -969,6 +961,57 @@
 		<options level="8" option1="33346" />
 		<options level="9" option1="33347" />
 		<options level="10" option1="33348" />
+	</item>
+	<item id="49676"> <!-- Talisman of Insolence Lv. 1 -->
+		<options level="0" option1="33370"  />		
+	</item>
+	<item id="49676"> <!-- Talisman of Insolence Lv. 2 -->
+		<options level="0" option1="33371"  />		
+	</item>
+	<item id="49676"> <!-- Talisman of Insolence Lv. 3 -->
+		<options level="0" option1="33372"  />		
+	</item>
+	<item id="49676"> <!-- Talisman of Insolence Lv. 4 -->
+		<options level="0" option1="33373"  />		
+	</item>
+	<item id="49676"> <!-- Talisman of Insolence Lv. 5 -->
+		<options level="0" option1="33374"  />		
+	</item>
+	<item id="49676"> <!-- Talisman of Insolence Lv. 6 -->
+		<options level="0" option1="33375"  />		
+	</item>
+	<item id="91952"> <!-- Ring of Insolence -->
+		<options level="0" option1="33376"  />
+		<options level="1" option1="33377" />
+		<options level="2" option1="33378" />
+		<options level="3" option1="33379" />
+		<options level="4" option1="33380" />
+		<options level="5" option1="33381" />
+		<options level="6" option1="33382" />
+		<options level="7" option1="33383" />
+		<options level="8" option1="33384" />
+		<options level="9" option1="33385" />
+		<options level="10" option1="33386" />
+	</item>	
+	<item id="91953"> <!-- Dragon valley earing -->
+		<options level="0" option1="33387" />
+		<options level="1" option1="33388" />
+		<options level="2" option1="33389" />
+		<options level="3" option1="33390" />
+		<options level="4" option1="33391" />
+		<options level="5" option1="33392" />
+		<options level="6" option1="33393" />
+		<options level="7" option1="33394" />
+		<options level="8" option1="33395" />
+		<options level="9" option1="33396" />
+		<options level="10" option1="33397" />
+	</item>	
+	<item id="49683"> <!-- Talisman_of_Baium -->
+		<options level="1" option1="33399" />
+		<options level="2" option1="33400" />
+		<options level="3" option1="33401" />
+		<options level="4" option1="33402" />
+		<options level="5" option1="33403" />
 	</item>
 	<item id="92018"> <!-- Talisman of Eva -->
 		<options level="0" option1="33404" />
@@ -997,7 +1040,6 @@
 		<options level="10" option1="33425" />
 	</item>
 	
-	<!-- Damaged RB accessory -->
 	<item id="90993"> <!-- Damaged_Antharas'_Earring -->
 		<options level="0" option1="50300" />
 		<options level="1" option1="50301" />
@@ -1038,7 +1080,6 @@
 		<options level="10" option1="50332" />		
 	</item>
 		
-	<!-- Elemental RB Necklace	 -->	
 	<item id="91119"> <!-- Ignis'_Necklace -->
 		<options level="0" option1="50333" />
 		<options level="1" option1="50334" />
@@ -1091,21 +1132,7 @@
 		<options level="9" option1="50375" />
 		<options level="10" option1="50376" />
 	</item>
-	
-	<item id="91953"> <!-- Dragon valley earing -->
-		<options level="0" option1="20001" />
-		<options level="1" option1="20002" />
-		<options level="2" option1="20003" />
-		<options level="3" option1="20004" />
-		<options level="4" option1="20005" />
-		<options level="5" option1="20006" />
-		<options level="6" option1="20007" />
-		<options level="7" option1="20007" />
-		<options level="8" option1="20007" />
-		<options level="9" option1="20010" />
-		<options level="10" option1="20011" />
-	</item>
-	
+			
 	<item id="71691"> <!-- Dragon Pedant - Attack Type Lv. 1 -->
 		<options level="0" option1="81023" />
 		<options level="1" option1="81024" />

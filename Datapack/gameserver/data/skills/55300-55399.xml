@@ -1931,10 +1931,10 @@
         </attributes>
         <target/>
         <effects>
-            <stat-modify stat="BONUS_EXP" mode="PER">
+            <stat-modify mode="PER" stat="BONUS_EXP" mode="PER">
                 <power initial="100.0"/>
             </stat-modify>
-            <stat-modify stat="BONUS_SP" mode="PER">
+            <stat-modify mode="PER" stat="BONUS_SP" mode="PER">
                 <power initial="100.0"/>
             </stat-modify>
         </effects>
