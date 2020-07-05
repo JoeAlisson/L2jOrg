@@ -106,11 +106,11 @@
             <npc id="30081" x="82200" y="149694" z="-3465" heading="48877" respawnTime="60sec"/>
             <npc id="30936" x="82250" y="149694" z="-3465" heading="48877" respawnTime="60sec"/>
             <npc id="33977" x="82350" y="149694" z="-3465" heading="48877" respawnTime="60sec"/>
-            <npc id="30095" x="82450" y="149694" z="-3465" heading="48877" respawnTime="60sec"/>
+            <npc id="30095" x="82524" y="149712" z="-3465" heading="48877" respawnTime="60sec"/>
             <npc id="30300" x="82550" y="149694" z="-3465" heading="48877" respawnTime="60sec"/>
             <npc id="30020" x="82650" y="149694" z="-3465" heading="48877" respawnTime="60sec"/>
-            <npc id="34275" x="82750" y="149694" z="-3465" heading="48877" respawnTime="60sec"/>
-            <npc id="34276" x="82800" y="149694" z="-3465" heading="48877" respawnTime="60sec"/>
+            <npc id="34275" x="82824" y="149712" z="-3465" heading="53501" respawnTime="60sec"/>
+            <npc id="34276" x="82874" y="149700" z="-3465" heading="39750" respawnTime="60sec"/>
         </group>
     </spawn>
 </list>
