@@ -1,5 +1,5 @@
 # L2jOrg
-
+![CI Gradle](https://github.com/JoeAlisson/L2jOrg/workflows/CI%20Gradle/badge.svg)
 ## Support the project
 
 If you like the project and want to support the developers please do a donation for them.
