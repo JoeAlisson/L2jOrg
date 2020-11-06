@@ -1,6 +1,11 @@
 # L2jOrg
 ![CI Gradle](https://github.com/JoeAlisson/L2jOrg/workflows/CI%20Gradle/badge.svg)
 
+* THIS REPOSITORY WAS DISCONTINUED. 
+* WE WILL KEEP THE ONLY THE BUG TRACK AND PUBLIC RELEASES IN THIS REPOSITORY
+* THE SOURCE CODE IN THIS REPOSITORY WILL NOT CHANGE ANYMORE, STILL THERE ONLY FOR HISTORIC PURPOSE.
+* WE MOVED TO ANOTHER REPOSITORY: https://github.com/L2jOrg/Datapack
+
 ## Releases
 
 We will do a new release of the pack every month! To download the last server release download it here: https://github.com/JoeAlisson/L2jOrg/releases
