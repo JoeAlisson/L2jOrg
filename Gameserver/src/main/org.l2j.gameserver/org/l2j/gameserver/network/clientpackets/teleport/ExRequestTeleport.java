@@ -51,7 +51,7 @@ public class ExRequestTeleport extends ClientPacket {
             return;
         }
 
-        if(GameUtils.canTeleport(player) && (player.getLevel() <= 40 || player.reduceAdena("Teleport", info.getPrice(), null, true))) {
+        if(GameUtils.canTeleport(player) && (player.getLevel() <= Config.MAX_FREE_TELEPORT_LEVEL || player.reduceAdena("Teleport", info.getPrice(), null, true))) {
             player.addRequest(new TeleportRequest(player, id));
             player.useMagic(CommonSkill.TELEPORT.getSkill(), null, false, true);
         }
