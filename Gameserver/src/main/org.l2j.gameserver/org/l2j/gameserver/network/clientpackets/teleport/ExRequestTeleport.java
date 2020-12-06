@@ -18,6 +18,7 @@
  */
 package org.l2j.gameserver.network.clientpackets.teleport;
 
+import org.l2j.gameserver.Config;
 import org.l2j.gameserver.data.xml.impl.TeleportEngine;
 import org.l2j.gameserver.data.xml.model.TeleportData;
 import org.l2j.gameserver.instancemanager.CastleManager;
