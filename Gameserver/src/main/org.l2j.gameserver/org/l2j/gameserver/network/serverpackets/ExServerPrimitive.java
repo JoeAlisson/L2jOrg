@@ -19,6 +19,7 @@
 package org.l2j.gameserver.network.serverpackets;
 
 import org.l2j.gameserver.model.interfaces.ILocational;
+import org.l2j.gameserver.model.location.Location;
 import org.l2j.gameserver.network.GameClient;
 import org.l2j.gameserver.network.ServerExPacketId;
 
@@ -206,7 +207,6 @@ public class ExServerPrimitive extends ServerPacket {
 
     /**
      * Adds a line to be displayed on client
-     *
      * @param name          the name that will be displayed over the middle of line
      * @param color         the color
      * @param isNameColored if {@code true} name will be colored as well.
@@ -214,7 +214,7 @@ public class ExServerPrimitive extends ServerPacket {
      * @param locational2   the ILocational to take coordinates for this line end point
      */
     public void addLine(String name, int color, boolean isNameColored, ILocational locational, ILocational locational2) {
-        addLine(name, color, isNameColored, locational, locational2.getX(), locational2.getY(), locational2.getZ());
+        addLine(name, color, isNameColored, (ILocational) locational, locational2.getX(), locational2.getY(), locational2.getZ());
     }
 
     /**
@@ -381,6 +381,39 @@ public class ExServerPrimitive extends ServerPacket {
         addLine("", color, false, locational, locational2);
     }
 
+    /**
+     * Add a square to be displayed on client.
+     * @param name : The {@link String} name that will be displayed over the point.
+     * @param color : The used {@link Color}.
+     * @param isNameColored : If true, the name will be colored.
+     * @param x : The x coordinate of one corner.
+     * @param y : The y coordinate of one corner.
+     * @param z : The z coordinate of all corners.
+     * @param size : The size of square (may be negative)
+     */
+    public void addSquare(String name, Color color, boolean isNameColored, int x, int y, int z, int size)
+    {
+        int x2 = x + size;
+        int y2 = y + size;
+        addLine(name, color, isNameColored, x, y, z, x, y2, z);
+        addLine(name, color, isNameColored, x2, y2, z, x, y2, z);
+        addLine(name, color, isNameColored, x2, y2, z, x2, y, z);
+        addLine(name, color, isNameColored, x, y, z, x2, y, z);
+    }
+
+    /**
+     * Add a square to be displayed on client.
+     * @param color : The used {@link Color}.
+     * @param x : The x coordinate of one corner.
+     * @param y : The y coordinate of one corner.
+     * @param z : The z coordinate of all corners.
+     * @param size : The size of square (may be negative)
+     */
+    public void addSquare(Color color, int x, int y, int z, int size)
+    {
+        addSquare("", color, false, x, y, z, size);
+    }
+
     @Override
     public void writeImpl(GameClient client) {
         writeId(ServerExPacketId.EX_SERVER_PRIMITIVE);
@@ -418,6 +451,11 @@ public class ExServerPrimitive extends ServerPacket {
         writeInt(line.getX());
         writeInt(line.getY());
         writeInt(line.getZ());
+    }
+
+    public void addLine(String name, Color color, boolean isNameColored, Location loc, Location loc2)
+    {
+        addLine(name, color, isNameColored, loc.getX(), loc.getY(), loc.getZ(), loc2.getX(), loc2.getY(), loc2.getZ());
     }
 
 

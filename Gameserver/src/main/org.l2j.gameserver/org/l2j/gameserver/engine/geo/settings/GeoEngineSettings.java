@@ -29,11 +29,13 @@ public class GeoEngineSettings implements Settings {
 
     private SyncMode syncMode;
     private boolean enabledPathFinding;
+    private String PATHFIND_BUFFERS;
 
     @Override
     public void load(SettingsFile settingsFile) {
         syncMode = settingsFile.getEnum("SyncMode", SyncMode.class, SyncMode.Z_ONLY);
         enabledPathFinding = settingsFile.getBoolean("EnablePathFinding", true);
+        PATHFIND_BUFFERS = settingsFile.getString("PathFindBuffers", "100x6;128x6;192x6;256x4;320x4;384x4;500x2");
     }
 
     public boolean isEnabledPathFinding() {
@@ -50,5 +52,15 @@ public class GeoEngineSettings implements Settings {
 
     public boolean isSyncMode(SyncMode mode) {
         return syncMode == mode;
+    }
+
+    public String getPathFindBuffers()
+    {
+        return PATHFIND_BUFFERS;
+    }
+
+    public void setPathFindBuffers(String PATHFIND_BUFFERS)
+    {
+        this.PATHFIND_BUFFERS = PATHFIND_BUFFERS;
     }
 }

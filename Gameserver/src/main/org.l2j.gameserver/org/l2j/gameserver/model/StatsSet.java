@@ -361,7 +361,19 @@ public class StatsSet implements IParserAdvUtils {
         }
         return result;
     }
+    public int getInteger(final String key)
+    {
+        final Object val = _set.get(key);
 
+        if (val instanceof Number)
+            return ((Number) val).intValue();
+        if (val instanceof String)
+            return Integer.parseInt((String) val);
+        if (val instanceof Boolean)
+            return (Boolean) val ? 1 : 0;
+
+        throw new IllegalArgumentException("StatSet : Integer value required, but found: " + val + " for key: " + key + ".");
+    }
     public List<Integer> getIntegerList(String key, String splitOn) {
         Objects.requireNonNull(key);
         Objects.requireNonNull(splitOn);
